@@ -1,5 +1,5 @@
-import { Dispatch, MutableRefObject, SetStateAction } from 'react'
-import { Lesson } from '../../../utils/nce'
+import type { Dispatch, RefObject, SetStateAction } from 'react'
+import type { Lesson } from '../../../utils/nce'
 import { evaluateDictation } from '../dictation'
 
 export const normalizeChineseInput = (value: string) => value
@@ -10,10 +10,10 @@ type ChineseCommitHandlerDeps = {
   rawValue: string
   dictationInputs: Record<number, string>
   mistakeCountMap: Record<number, number>
-  currentLessonRef: MutableRefObject<Lesson | null>
-  activeLineIndexRef: MutableRefObject<number>
-  isDictationModeRef: MutableRefObject<boolean>
-  isChineseTargetRef: MutableRefObject<boolean>
+  currentLessonRef: RefObject<Lesson | null>
+  activeLineIndexRef: RefObject<number>
+  isDictationModeRef: RefObject<boolean>
+  isChineseTargetRef: RefObject<boolean>
   setDictationInputs: Dispatch<SetStateAction<Record<number, string>>>
   setMistakeCountMap: Dispatch<SetStateAction<Record<number, number>>>
   setTypingLockedMap: Dispatch<SetStateAction<Record<number, boolean>>>

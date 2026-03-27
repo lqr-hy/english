@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import './App.css'
 import { allLessons, levelOptions } from './utils/nce'
 import { getLearnedMap } from './utils/progress'
-import { LearnedMap } from './features/records/db'
+import type { LearnedMap } from './features/records/db'
 
 type LearningContent = {
   id: string

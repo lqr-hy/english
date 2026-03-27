@@ -1,4 +1,4 @@
-import { Lesson, SubtitleLine } from '../../utils/nce'
+import type { Lesson, SubtitleLine } from '../../utils/nce'
 
 const DB_NAME = 'nce-learning-db'
 const DB_VERSION = 1

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DictationFeedback, FeedbackSegment } from '../../features/lesson/dictation'
+import type { DictationFeedback, FeedbackSegment } from '../../features/lesson/dictation'
 
 type DictationModePanelProps = {
   lineIndex: number

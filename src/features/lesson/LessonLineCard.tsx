@@ -1,5 +1,5 @@
-import { DictationFeedback } from './dictation'
-import { SubtitleLine } from '../../utils/nce'
+import type { DictationFeedback } from './dictation'
+import type { SubtitleLine } from '../../utils/nce'
 import HideModeContent from '../../components/lesson/HideModeContent'
 import NormalModeContent from '../../components/lesson/NormalModeContent'
 import DictationModePanel from '../../components/lesson/DictationModePanel'

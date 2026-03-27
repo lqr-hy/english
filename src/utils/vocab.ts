@@ -15,20 +15,23 @@ export type VocabBook = {
 
 export const WORDS_PER_CHAPTER = 20
 
+const withBase = (path: string): string =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+
 export const vocabBooks: VocabBook[] = [
   {
     id: 'bec2',
     name: '商务英语',
     description: '商务英语常见词',
     totalWords: 2753,
-    jsonFile: '/dict/BEC_2_T.json',
+    jsonFile: withBase('dict/BEC_2_T.json'),
   },
   {
     id: 'bec3',
     name: 'BEC',
     description: 'BEC考试常见词',
     totalWords: 2825,
-    jsonFile: '/dict/BEC_3_T.json',
+    jsonFile: withBase('dict/BEC_3_T.json'),
   },
 ]
 

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react, { reactCompilerPreset } from '@vitejs/plugin-react'
+import babel from '@rolldown/plugin-babel'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
@@ -8,6 +9,7 @@ export default defineConfig(({ command }) => {
     base: '/english/',
     plugins: [
       react(),
+      babel({ presets: [reactCompilerPreset()] })
     ],
   }
 })

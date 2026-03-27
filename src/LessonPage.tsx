@@ -1,19 +1,22 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import './App.css'
-import { allLessons, Lesson } from './utils/nce'
+import { allLessons } from './utils/nce'
+import type { Lesson } from './utils/nce'
 import { markLessonLearned } from './utils/progress'
 import LessonLineCard from './features/lesson/LessonLineCard'
-import { DictationFeedback, evaluateDictation } from './features/lesson/dictation'
+import { evaluateDictation } from './features/lesson/dictation'
+import type { DictationFeedback } from './features/lesson/dictation'
 import { handleEnglishBackspaceAtActive, handleEnglishTypeAtActive } from './features/lesson/modes/englishDictation'
 import { commitChineseInputAtActive, updateChineseDraftInput } from './features/lesson/modes/chineseDictation'
 import { getFavoriteMapByLesson, recordMistake, toggleFavorite } from './features/records/db'
 import LessonSettingsPanel from './features/lesson/settings/LessonSettingsPanel'
 import ShortcutModal from './features/lesson/settings/ShortcutModal'
-import { PlayMode, PLAY_MODE_LABEL, VIEW_MODE_LABEL, ViewMode } from './features/lesson/settings/types'
+import { PLAY_MODE_LABEL, VIEW_MODE_LABEL } from './features/lesson/settings/types'
+import type { PlayMode, ViewMode } from './features/lesson/settings/types'
 
-const clickWav = '/click.wav'
-const beepWav = '/beep.wav'
+const clickWav = `${import.meta.env.BASE_URL}click.wav`
+const beepWav = `${import.meta.env.BASE_URL}beep.wav`
 
 const SHADOW_GAP_SECONDS = 2.2
 const LISTEN_GAP_SECONDS = 0.8

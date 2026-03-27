@@ -2,12 +2,10 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import './App.css'
 import RecordPagination from './features/records/RecordPagination'
-import { getMistakesPaged, MistakeRecord, MistakeSortBy } from './features/records/db'
-import {
-  getWordMistakesPaged,
-  WordMistakeRecord,
-  WordMistakeSortBy,
-} from './features/records/wordDb'
+import { getMistakesPaged } from './features/records/db'
+import type { MistakeRecord, MistakeSortBy } from './features/records/db'
+import { getWordMistakesPaged } from './features/records/wordDb'
+import type { WordMistakeRecord, WordMistakeSortBy } from './features/records/wordDb'
 import { vocabBooks } from './utils/vocab'
 
 type RecordType = 'nce' | 'vocab'

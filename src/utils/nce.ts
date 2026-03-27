@@ -31,9 +31,12 @@ export const formatMediaTime = (value: number): string => {
 
 const toBasePath = (path: string): string => path.replace(/\.(mp3|lrc)$/i, '')
 
+const withBase = (path: string): string =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+
 const toPublicMediaPath = (path: string, ext: 'mp3' | 'lrc') => {
   const normalized = toBasePath(path).replace(/^.*\/public\//, '/')
-  return `${normalized}.${ext}`
+  return withBase(`${normalized}.${ext}`)
 }
 
 const parseName = (filename: string) => {

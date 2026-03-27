@@ -1,5 +1,6 @@
-import { getLearnedMap as getLearnedMapFromDb, LearnedMap, markLessonLearned as markLessonLearnedInDb } from '../features/records/db'
-import { Lesson } from './nce'
+import { getLearnedMap as getLearnedMapFromDb, markLessonLearned as markLessonLearnedInDb } from '../features/records/db'
+import type { LearnedMap } from '../features/records/db'
+import type { Lesson } from './nce'
 
 export type { LearnedMap }
 

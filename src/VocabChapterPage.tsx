@@ -444,8 +444,8 @@ function VocabChapterPage() {
       </section>
 
       <audio ref={audioRef} preload="none" className="audio-player-hidden" />
-      <audio ref={clickAudioRef} src="/click.wav" preload="auto" className="audio-player-hidden" />
-      <audio ref={beepAudioRef} src="/beep.wav" preload="auto" className="audio-player-hidden" />
+      <audio ref={clickAudioRef} src={`${import.meta.env.BASE_URL}click.wav`} preload="auto" className="audio-player-hidden" />
+      <audio ref={beepAudioRef} src={`${import.meta.env.BASE_URL}beep.wav`} preload="auto" className="audio-player-hidden" />
     </main>
   )
 }

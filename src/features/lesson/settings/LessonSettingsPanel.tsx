@@ -1,4 +1,5 @@
-import { PLAY_MODE_LABEL, PLAY_MODE_OPTIONS, PLAYBACK_SPEED_OPTIONS, PlayMode, VIEW_MODE_LABEL, VIEW_MODE_OPTIONS, ViewMode } from './types'
+import { PLAY_MODE_LABEL, PLAY_MODE_OPTIONS, PLAYBACK_SPEED_OPTIONS, VIEW_MODE_LABEL, VIEW_MODE_OPTIONS } from './types'
+import type { PlayMode, ViewMode } from './types'
 
 type LessonSettingsPanelProps = {
   playMode: PlayMode
