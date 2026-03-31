@@ -74,14 +74,15 @@ export const commitChineseInputAtActive = ({
     playError()
     triggerShake(targetIndex)
 
-    if (nextMistakeCount >= 3) {
-      window.setTimeout(() => {
-        setDictationInputs((prev) => ({
-          ...prev,
-          [targetIndex]: '',
-        }))
-      }, errorPreviewMs)
-    }
+    // 错误输入短暂预览后，仅回退到已匹配的正确前缀，避免长句整段重输。
+    const fallback = normalizedValue.slice(0, Math.max(0, feedback.matchedCount))
+    window.setTimeout(() => {
+      setDictationInputs((prev) => ({
+        ...prev,
+        [targetIndex]: fallback,
+      }))
+      setChineseDraftInput(fallback)
+    }, errorPreviewMs)
     return
   }
 

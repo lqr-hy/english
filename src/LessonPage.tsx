@@ -325,9 +325,7 @@ function LessonPage() {
       return
     }
 
-    const lineCount = currentLesson.subtitles.length
-    const clickedActive = index === activeLineIndex
-    const targetIndex = clickedActive ? Math.min(index + 1, lineCount - 1) : index
+    const targetIndex = index
 
     setActiveLineIndex(targetIndex)
 
@@ -504,12 +502,25 @@ function LessonPage() {
      *   Space         播放 / 暂停（非默写模式）
      *   P             点读当前句（非默写模式，以 tap 模式单次播放）
      *   Cmd/Ctrl + J  播放当前句音频（所有默写模式）
+     *   Cmd/Ctrl + ,  打开 / 关闭学习设置面板
+    *   Cmd/Ctrl + K  从本章第一句重播
+    *   Cmd/Ctrl + 1  显示模式：中英文
+    *   Cmd/Ctrl + 2  显示模式：隐藏内容
+    *   Cmd/Ctrl + 3  显示模式：显示英文默写中文
+    *   Cmd/Ctrl + 4  显示模式：显示中文默写英文
      *   Backspace     删除上一个字符（英文默写模式）
      *   ↑ / ↓         上一句 / 下一句
      *   ` (反引号)    打开 / 关闭学习设置面板
      *   Escape        关闭学习设置面板
      */
     const onKeyDown = (event: KeyboardEvent) => {
+      // Cmd/Ctrl + ,: 切换设置面板（比反引号更容易触发）
+      if (event.key === ',' && (event.metaKey || event.ctrlKey) && !event.altKey) {
+        event.preventDefault()
+        setPanelOpen((prev) => !prev)
+        return
+      }
+
       // Cmd/Ctrl + J: 所有默写模式下都允许播放当前句音频。
       if (
         (event.key === 'j' || event.key === 'J')
@@ -520,6 +531,38 @@ function LessonPage() {
         event.preventDefault()
         startPlaybackRef.current(activeLineIndexRef.current)
         return
+      }
+
+      // Cmd/Ctrl + K: 从本章第一句重播
+      if ((event.key === 'k' || event.key === 'K') && (event.metaKey || event.ctrlKey) && !event.altKey) {
+        event.preventDefault()
+        setActiveLineIndex(0)
+        startPlaybackRef.current(0)
+        return
+      }
+
+      // Cmd/Ctrl + 数字: 快速切换显示模式
+      if ((event.metaKey || event.ctrlKey) && !event.altKey) {
+        if (event.key === '1') {
+          event.preventDefault()
+          setViewMode('both')
+          return
+        }
+        if (event.key === '2') {
+          event.preventDefault()
+          setViewMode('hide')
+          return
+        }
+        if (event.key === '3') {
+          event.preventDefault()
+          setViewMode('dictation-en')
+          return
+        }
+        if (event.key === '4') {
+          event.preventDefault()
+          setViewMode('dictation-zh')
+          return
+        }
       }
 
       const target = event.target as HTMLElement | null
