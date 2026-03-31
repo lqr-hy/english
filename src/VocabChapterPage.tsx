@@ -17,23 +17,13 @@ import {
   markChapterLearned,
 } from './features/records/wordDb'
 import { evaluateDictation } from './features/lesson/dictation'
-
-// card  : show word + translation directly
-// en-zh : show English, click to reveal Chinese
-// zh-en : show Chinese, type English (NCE-style char input)
-type StudyMode = 'card' | 'en-zh' | 'zh-en'
-
-const ERROR_PREVIEW_MS = 220
-const AUTO_ADVANCE_MS = 400
-const normalizeInput = (v: string) => v.toLowerCase().replace(/[^a-z0-9']/g, '')
-
-function PlayIcon() {
-  return (
-    <svg viewBox="0 0 16 16" fill="currentColor" width="12" height="12" aria-hidden="true">
-      <path d="M3 2.8A1 1 0 014 2l8 5.2a1 1 0 010 1.6L4 14A1 1 0 012.5 13.14V2.86A1 1 0 013 2.8z" />
-    </svg>
-  )
-}
+import type { StudyMode } from './features/vocab/types'
+import { normalizeInput, ERROR_PREVIEW_MS, AUTO_ADVANCE_MS } from './features/vocab/types'
+import CardMode from './features/vocab/CardMode'
+import EnZhMode from './features/vocab/EnZhMode'
+import ZhEnMode from './features/vocab/ZhEnMode'
+import QuizMode from './features/vocab/QuizMode'
+import ChallengeMode from './features/vocab/ChallengeMode'
 
 function VocabChapterPage() {
   const { bookId, chapterNum: chapterNumStr } = useParams()
@@ -52,7 +42,8 @@ function VocabChapterPage() {
   const [shaking, setShaking] = useState(false)
   const [favoriteMap, setFavoriteMap] = useState<Record<string, boolean>>({})
   const [visitedIndices, setVisitedIndices] = useState<Set<number>>(new Set())
-  const [hoverHint, setHoverHint] = useState('')
+  const [allBookWords, setAllBookWords] = useState<WordEntry[]>([])
+  const [challengeDone, setChallengeDone] = useState(false)
 
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const clickAudioRef = useRef<HTMLAudioElement | null>(null)
@@ -88,6 +79,7 @@ function VocabChapterPage() {
         if (!mounted) {
           return
         }
+        setAllBookWords(allWords)
         setWords(getChapterWords(allWords, chapterNum))
         setFavoriteMap(favMap)
         setLoading(false)
@@ -213,6 +205,9 @@ function VocabChapterPage() {
 
       const currentMode = modeRef.current
 
+      // Quiz + Challenge handle their own keys
+      if (currentMode === 'quiz' || currentMode === 'challenge') return
+
       if (currentMode === 'zh-en') {
         // Space plays audio (not a typed char for single words)
         if (e.code === 'Space') {
@@ -251,7 +246,33 @@ function VocabChapterPage() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [goNext, goPrev, playAudio, handleKeyForZhEn, markVisited])
 
-  // Compute live feedback for zh-en char display
+  // Listen for child component events
+  useEffect(() => {
+    const onQuizAdvance = () => {
+      const idx = currentIndexRef.current
+      if (idx < wordsRef.current.length - 1) setCurrentIndex(idx + 1)
+    }
+    const onQuizReset = () => setCurrentIndex(0)
+    const onSwitchMode = (e: Event) => {
+      const detail = (e as CustomEvent).detail as StudyMode
+      switchMode(detail)
+    }
+    const onChallengeDone = () => {
+      setChallengeDone(true)
+    }
+    window.addEventListener('vocab-quiz-advance', onQuizAdvance)
+    window.addEventListener('vocab-quiz-reset', onQuizReset)
+    window.addEventListener('vocab-switch-mode', onSwitchMode)
+    window.addEventListener('vocab-challenge-done', onChallengeDone)
+    return () => {
+      window.removeEventListener('vocab-quiz-advance', onQuizAdvance)
+      window.removeEventListener('vocab-quiz-reset', onQuizReset)
+      window.removeEventListener('vocab-switch-mode', onSwitchMode)
+      window.removeEventListener('vocab-challenge-done', onChallengeDone)
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   const dictFeedback = useMemo(() => {
     const word = words[currentIndex]
     if (!word || mode !== 'zh-en') return null
@@ -271,9 +292,12 @@ function VocabChapterPage() {
   const switchMode = useCallback((next: StudyMode) => {
     clearTimers()
     setMode(next)
+    setCurrentIndex(0)
     setShowTranslation(next !== 'en-zh')
     setDictInput('')
     setShaking(false)
+    setChallengeDone(false)
+    setVisitedIndices(new Set())
   }, [clearTimers])
 
   if (!book) return null
@@ -281,10 +305,18 @@ function VocabChapterPage() {
   const currentWord = words[currentIndex]
   const totalChapters = getChapterCount(book.totalWords)
 
-  // Pending char placeholders for zh-en mode before any input
-  const pendingSegments = currentWord
-    ? currentWord.name.split('').map((ch) => ({ expected: ch, actual: '', status: 'pending' as const, hint: '', wordStart: false }))
-    : []
+  const modeProps = currentWord ? {
+    word: currentWord,
+    words,
+    currentIndex,
+    bookId: bookId!,
+    chapterId,
+    chapterNum,
+    favoriteMap,
+    playAudio,
+    onToggleFavorite: handleToggleFavorite,
+    markVisited,
+  } : null
 
   return (
     <main className="page">
@@ -298,6 +330,8 @@ function VocabChapterPage() {
           <button type="button" className={mode === 'card' ? 'chip active' : 'chip'} onClick={() => switchMode('card')}>卡片</button>
           <button type="button" className={mode === 'en-zh' ? 'chip active' : 'chip'} onClick={() => switchMode('en-zh')}>英→中</button>
           <button type="button" className={mode === 'zh-en' ? 'chip active' : 'chip'} onClick={() => switchMode('zh-en')}>中→英</button>
+          <button type="button" className={mode === 'quiz' ? 'chip active' : 'chip'} onClick={() => switchMode('quiz')}>选择题</button>
+          <button type="button" className={mode === 'challenge' ? 'chip active' : 'chip'} onClick={() => switchMode('challenge')}>拼写挑战</button>
           <span className="muted vocab-progress-counter">
             {currentIndex + 1} / {words.length}
             {visitedIndices.size > 0 && ` · 已学 ${visitedIndices.size}/${words.length}`}
@@ -306,103 +340,30 @@ function VocabChapterPage() {
 
         {loading && <p className="muted">加载中…</p>}
 
-        {!loading && currentWord && (
+        {!loading && modeProps && mode !== 'challenge' && (
           <div className={`vocab-word-card${shaking ? ' shake' : ''}`}>
-
-            {/* ── 卡片模式：直接显示单词 + 翻译 ── */}
-            {mode === 'card' && (
-              <div className="vocab-word-main">
-                <div className="vocab-word-top-actions">
-                  <button type="button" className="line-icon-btn" onClick={() => playAudio(currentWord.name)} aria-label="播放发音"><PlayIcon /></button>
-                  <button type="button" className={`line-fav-btn${favoriteMap[currentWord.name] ? ' active' : ''}`} onClick={() => handleToggleFavorite(currentWord)} aria-label="收藏">★</button>
-                </div>
-                <h2 className="vocab-word-name">{currentWord.name}</h2>
-                <div className="vocab-word-phonetic">
-                  {currentWord.usphone && <span>美 /{currentWord.usphone}/</span>}
-                  {currentWord.ukphone && <span>英 /{currentWord.ukphone}/</span>}
-                </div>
-                <div className="vocab-word-trans">
-                  {currentWord.trans.map((t, i) => <p key={i}>{t}</p>)}
-                </div>
-              </div>
-            )}
-
-            {/* ── 英→中：显示英文，隐藏中文，点击/Space 查看 ── */}
+            {mode === 'card' && <CardMode {...modeProps} />}
             {mode === 'en-zh' && (
-              <>
-                <div className="vocab-word-main">
-                  <div className="vocab-word-top-actions">
-                    <button type="button" className="line-icon-btn" onClick={() => playAudio(currentWord.name)} aria-label="播放发音"><PlayIcon /></button>
-                    <button type="button" className={`line-fav-btn${favoriteMap[currentWord.name] ? ' active' : ''}`} onClick={() => handleToggleFavorite(currentWord)} aria-label="收藏">★</button>
-                  </div>
-                  <h2 className="vocab-word-name">{currentWord.name}</h2>
-                  <div className="vocab-word-phonetic">
-                    {currentWord.usphone && <span>美 /{currentWord.usphone}/</span>}
-                    {currentWord.ukphone && <span>英 /{currentWord.ukphone}/</span>}
-                  </div>
-                </div>
-                {showTranslation ? (
-                  <div className="vocab-word-trans">
-                    {currentWord.trans.map((t, i) => <p key={i}>{t}</p>)}
-                  </div>
-                ) : (
-                  <button
-                    type="button"
-                    className="vocab-reveal-area"
-                    onClick={() => { setShowTranslation(true); markVisited(currentIndex) }}
-                  >
-                    点击查看释义（Space）
-                  </button>
-                )}
-              </>
+              <EnZhMode
+                {...modeProps}
+                showTranslation={showTranslation}
+                onReveal={() => { setShowTranslation(true); markVisited(currentIndex) }}
+              />
             )}
-
-            {/* ── 中→英：显示中文，逐字键入英文（参考新概念模式）── */}
             {mode === 'zh-en' && (
-              <>
-                <div className="vocab-dict-prompt">
-                  {currentWord.trans.map((t, i) => <p key={i}>{t}</p>)}
-                  <div className="vocab-word-phonetic">
-                    {currentWord.usphone && <span>美 /{currentWord.usphone}/</span>}
-                    {currentWord.ukphone && <span>英 /{currentWord.ukphone}/</span>}
-                  </div>
-                </div>
-
-                <div className="vocab-dict-display">
-                  <div className="dictation-highlight">
-                    {(dictFeedback?.segments ?? pendingSegments).map((seg, i) => {
-                      const isHovered = Boolean(hoverHint && hoverHint === seg.hint)
-                      const text =
-                        seg.status === 'pending'
-                          ? (isHovered ? (seg.expected || ' ') : '_')
-                          : seg.status === 'wrong'
-                            ? '_'
-                            : (seg.actual || ' ')
-                      return (
-                        <span
-                          key={i}
-                          className={`token-${seg.status}${seg.wordStart ? ' token-word-start' : ''}${isHovered ? ' reveal-hint' : ''}`}
-                          onMouseEnter={() => setHoverHint(seg.hint || String(i))}
-                          onMouseLeave={() => setHoverHint('')}
-                        >
-                          {text}
-                        </span>
-                      )
-                    })}
-                  </div>
-                  <p className="vocab-dict-hint muted">Space / Cmd+J 播放发音</p>
-                </div>
-
-                <div className="vocab-dict-actions">
-                  <button type="button" className="line-icon-btn" onClick={() => playAudio(currentWord.name)} aria-label="播放发音"><PlayIcon /></button>
-                  <button type="button" className={`line-fav-btn${favoriteMap[currentWord.name] ? ' active' : ''}`} onClick={() => handleToggleFavorite(currentWord)} aria-label="收藏">★</button>
-                </div>
-              </>
+              <ZhEnMode {...modeProps} dictFeedback={dictFeedback} />
+            )}
+            {mode === 'quiz' && (
+              <QuizMode key={mode} {...modeProps} allBookWords={allBookWords} />
             )}
           </div>
         )}
 
-        {!loading && words.length > 0 && (
+        {!loading && modeProps && mode === 'challenge' && (
+          <ChallengeMode key={mode} {...modeProps} />
+        )}
+
+        {!loading && words.length > 0 && mode !== 'challenge' && (
           <div className="vocab-nav-row">
             <button type="button" className="btn-light" onClick={goPrev} disabled={currentIndex === 0}>上一词</button>
             <div className="vocab-dot-row" role="tablist" aria-label="单词导航">
@@ -428,19 +389,21 @@ function VocabChapterPage() {
           </div>
         )}
 
+        {(mode !== 'challenge' || challengeDone) && (
         <div className="lesson-nav lesson-nav-bottom">
           {chapterNum > 1 && (
-            <Link to={`/vocab/${book.id}/${chapterNum - 1}`} className="btn-light" onClick={() => { clearTimers(); setCurrentIndex(0) }}>
+            <Link to={`/vocab/${book.id}/${chapterNum - 1}`} className="btn-light" onClick={() => { clearTimers(); setCurrentIndex(0); setChallengeDone(false) }}>
               上一章
             </Link>
           )}
           <span>{chapterNum} / {totalChapters}</span>
           {chapterNum < totalChapters && (
-            <Link to={`/vocab/${book.id}/${chapterNum + 1}`} className="btn-light" onClick={() => { clearTimers(); setCurrentIndex(0) }}>
+            <Link to={`/vocab/${book.id}/${chapterNum + 1}`} className="btn-light" onClick={() => { clearTimers(); setCurrentIndex(0); setChallengeDone(false) }}>
               下一章
             </Link>
           )}
         </div>
+        )}
       </section>
 
       <audio ref={audioRef} preload="none" className="audio-player-hidden" />
