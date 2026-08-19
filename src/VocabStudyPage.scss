@@ -38,7 +38,7 @@
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -59,6 +59,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  min-height: 78px;
   border: 2px solid var(--color-border);
   border-radius: 14px;
   background: var(--color-surface);
@@ -76,9 +77,9 @@
 }
 
 .vocab-chapter-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: grid;
+  gap: 3px;
+  min-width: 0;
 }
 
 .vocab-chapter-info strong {
@@ -91,6 +92,7 @@
 .vocab-chapter-range {
   font-size: 13px;
   color: var(--color-text-muted);
+  white-space: nowrap;
 }
 
 /* ══════════════════════════════════════════════
@@ -122,12 +124,10 @@
    ══════════════════════════════════════════════ */
 @media (max-width: 640px) {
   .vocab-chapter-info {
-    flex-direction: column;
-    align-items: flex-start;
     gap: 4px;
   }
 
   .vocab-chapter-range {
-    display: none;
+    white-space: normal;
   }
 }

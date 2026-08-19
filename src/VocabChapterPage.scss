@@ -134,6 +134,15 @@
   font-size: 15px;
 }
 
+.vocab-word-trans .vocab-word-example {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-style: italic;
+}
+
 .vocab-dict-prompt {
   display: grid;
   gap: 6px;

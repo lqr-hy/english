@@ -100,17 +100,13 @@ function VocabStudyPage() {
               const start = i * WORDS_PER_CHAPTER
               const chapterWords = words.slice(start, start + WORDS_PER_CHAPTER)
               const isLearned = learnedSet.has(chapterId)
-              const firstWord = chapterWords[0]?.name ?? ''
-              const lastWord = chapterWords[chapterWords.length - 1]?.name ?? ''
 
               return (
                 <li key={chapterId}>
                   <Link to={`/vocab/${book.id}/${chapterNum}`} className="vocab-chapter-row">
                     <div className="vocab-chapter-info">
                       <strong>第 {chapterNum} 章</strong>
-                      <span className="vocab-chapter-range">
-                        {firstWord} — {lastWord}
-                      </span>
+                      <span className="vocab-chapter-range">{chapterWords.length} 个专业术语</span>
                     </div>
                     {isLearned && <em className="learned-badge">已学习</em>}
                   </Link>

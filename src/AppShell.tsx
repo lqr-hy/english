@@ -20,6 +20,15 @@ function BookIcon() {
   )
 }
 
+function IndustryIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <path d="M7 16v-3m5 3V8m5 8v-5" />
+    </svg>
+  )
+}
+
 function ErrorIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -58,7 +67,8 @@ function AppShell() {
 
   const isHome = location.pathname === '/'
   const isLearn =
-    location.pathname.startsWith('/learn') || location.pathname.startsWith('/vocab')
+    location.pathname.startsWith('/learn') || location.pathname.startsWith('/vocab') || location.pathname === '/resources'
+  const isIndustry = location.pathname === '/industry'
   const isMistakes = location.pathname === '/records/mistakes'
   const isFavorites = location.pathname === '/records/favorites'
 
@@ -91,6 +101,13 @@ function AppShell() {
           >
             <BookIcon />
             学习
+          </Link>
+          <Link
+            to="/industry"
+            className={isIndustry ? 'global-nav-link active' : 'global-nav-link'}
+          >
+            <IndustryIcon />
+            专业英语
           </Link>
           <Link
             to="/records/mistakes"

@@ -3,6 +3,7 @@ export type WordEntry = {
   trans: string[]
   usphone: string
   ukphone: string
+  example?: string
 }
 
 export type VocabBook = {
@@ -11,6 +12,7 @@ export type VocabBook = {
   description: string
   totalWords: number
   jsonFile: string
+  domain?: 'business' | 'pcb' | 'bms' | 'reception'
 }
 
 export const WORDS_PER_CHAPTER = 20
@@ -25,6 +27,7 @@ export const vocabBooks: VocabBook[] = [
     description: '商务英语常见词',
     totalWords: 2753,
     jsonFile: withBase('dict/BEC_2_T.json'),
+    domain: 'business',
   },
   {
     id: 'bec3',
@@ -32,6 +35,31 @@ export const vocabBooks: VocabBook[] = [
     description: 'BEC考试常见词',
     totalWords: 2825,
     jsonFile: withBase('dict/BEC_3_T.json'),
+    domain: 'business',
+  },
+  {
+    id: 'pcb',
+    name: 'PCB 与电子模块英语',
+    description: '按 12 个专业主题组织：原理图、SI/PI、制造、PCBA、EMC 等',
+    totalWords: 320,
+    jsonFile: withBase('dict/PCB_T.json'),
+    domain: 'pcb',
+  },
+  {
+    id: 'bms',
+    name: 'BMS 电池管理英语',
+    description: '按 12 个专业主题组织：电化学、估算、热管理、测试与合规等',
+    totalWords: 320,
+    jsonFile: withBase('dict/BMS_T.json'),
+    domain: 'bms',
+  },
+  {
+    id: 'reception',
+    name: '商务接待英语',
+    description: '来访、预约、会议、酒店与客户沟通核心词',
+    totalWords: 100,
+    jsonFile: withBase('dict/RECEPTION_T.json'),
+    domain: 'reception',
   },
 ]
 

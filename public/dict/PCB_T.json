@@ -1,0 +1,2662 @@
+[
+  {
+    "name": "schematic",
+    "trans": [
+      "原理图；电路图"
+    ],
+    "usphone": "ski'mætɪk",
+    "ukphone": "skiː'mætɪk",
+    "example": "Please review the schematic before we start the layout."
+  },
+  {
+    "name": "layout",
+    "trans": [
+      "布局；PCB 布线设计"
+    ],
+    "usphone": "'leɪaʊt",
+    "ukphone": "'leɪaʊt",
+    "example": "The layout keeps the sensitive traces away from the power section."
+  },
+  {
+    "name": "footprint",
+    "trans": [
+      "封装；焊盘图形"
+    ],
+    "usphone": "'fʊtprɪnt",
+    "ukphone": "'fʊtprɪnt",
+    "example": "Verify that the component footprint matches the datasheet."
+  },
+  {
+    "name": "symbol",
+    "trans": [
+      "电路符号；标志"
+    ],
+    "usphone": "'sɪmbl",
+    "ukphone": "'sɪmbl",
+    "example": "Use the approved symbol in the schematic library."
+  },
+  {
+    "name": "component",
+    "trans": [
+      "元器件；组件"
+    ],
+    "usphone": "kəm'poʊnənt",
+    "ukphone": "kəm'pəʊnənt",
+    "example": "This component is not available from our approved supplier."
+  },
+  {
+    "name": "resistor",
+    "trans": [
+      "电阻器"
+    ],
+    "usphone": "rɪ'zɪstər",
+    "ukphone": "rɪ'zɪstə",
+    "example": "Change the resistor value to limit the current."
+  },
+  {
+    "name": "capacitor",
+    "trans": [
+      "电容器"
+    ],
+    "usphone": "kə'pæsɪtər",
+    "ukphone": "kə'pæsɪtə",
+    "example": "Place the capacitor close to the power pin."
+  },
+  {
+    "name": "connector",
+    "trans": [
+      "连接器；接插件"
+    ],
+    "usphone": "kə'nektər",
+    "ukphone": "kə'nektə",
+    "example": "The connector must be keyed to prevent reverse insertion."
+  },
+  {
+    "name": "trace",
+    "trans": [
+      "走线；导线"
+    ],
+    "usphone": "treɪs",
+    "ukphone": "treɪs",
+    "example": "Keep the high-current trace as short as possible."
+  },
+  {
+    "name": "via",
+    "trans": [
+      "过孔"
+    ],
+    "usphone": "'vaɪə",
+    "ukphone": "'vaɪə",
+    "example": "Add a via near the pad to improve thermal performance."
+  },
+  {
+    "name": "layer",
+    "trans": [
+      "层；板层"
+    ],
+    "usphone": "'leɪər",
+    "ukphone": "'leɪə",
+    "example": "Route the signal on the inner layer."
+  },
+  {
+    "name": "pad",
+    "trans": [
+      "焊盘"
+    ],
+    "usphone": "pæd",
+    "ukphone": "pæd",
+    "example": "The pad size follows the manufacturer recommendation."
+  },
+  {
+    "name": "solder",
+    "trans": [
+      "焊料；焊接"
+    ],
+    "usphone": "'sɑdər",
+    "ukphone": "'səʊldə",
+    "example": "Do not apply too much solder to the joint."
+  },
+  {
+    "name": "assembly",
+    "trans": [
+      "组装；装配"
+    ],
+    "usphone": "ə'sembli",
+    "ukphone": "ə'sembli",
+    "example": "The assembly drawing is ready for production."
+  },
+  {
+    "name": "prototype",
+    "trans": [
+      "原型；样机"
+    ],
+    "usphone": "'proʊtətaɪp",
+    "ukphone": "'prəʊtətaɪp",
+    "example": "We will test the prototype next week."
+  },
+  {
+    "name": "fabrication",
+    "trans": [
+      "制造；板厂生产"
+    ],
+    "usphone": "ˌfæbrɪ'keɪʃn",
+    "ukphone": "ˌfæbrɪ'keɪʃn",
+    "example": "Send the fabrication files to the board house."
+  },
+  {
+    "name": "gerber",
+    "trans": [
+      "Gerber 光绘文件"
+    ],
+    "usphone": "'ɡɜrbər",
+    "ukphone": "'ɡɜːbə",
+    "example": "Please export the Gerber files with the latest revision."
+  },
+  {
+    "name": "bill",
+    "trans": [
+      "清单；账单"
+    ],
+    "usphone": "bɪl",
+    "ukphone": "bɪl",
+    "example": "The bill of materials lists every approved part."
+  },
+  {
+    "name": "revision",
+    "trans": [
+      "版本；修订"
+    ],
+    "usphone": "rɪ'vɪʒn",
+    "ukphone": "rɪ'vɪʒn",
+    "example": "This revision fixes the connector orientation."
+  },
+  {
+    "name": "clearance",
+    "trans": [
+      "间距；安全距离"
+    ],
+    "usphone": "'klɪrəns",
+    "ukphone": "'klɪərəns",
+    "example": "Increase the clearance around the high-voltage net."
+  },
+  {
+    "name": "impedance",
+    "trans": [
+      "阻抗"
+    ],
+    "usphone": "ɪm'piːdəns",
+    "ukphone": "ɪm'piːdəns",
+    "example": "Control the impedance of this differential pair."
+  },
+  {
+    "name": "ground",
+    "trans": [
+      "地；接地"
+    ],
+    "usphone": "ɡraʊnd",
+    "ukphone": "ɡraʊnd",
+    "example": "Connect the shield to ground at one point."
+  },
+  {
+    "name": "voltage",
+    "trans": [
+      "电压"
+    ],
+    "usphone": "'voʊltɪdʒ",
+    "ukphone": "'vəʊltɪdʒ",
+    "example": "Measure the voltage at the input connector."
+  },
+  {
+    "name": "current",
+    "trans": [
+      "电流"
+    ],
+    "usphone": "'kɜrənt",
+    "ukphone": "'kʌrənt",
+    "example": "The current exceeds the rated limit."
+  },
+  {
+    "name": "debug",
+    "trans": [
+      "调试；排查故障"
+    ],
+    "usphone": "diː'bʌɡ",
+    "ukphone": "diː'bʌɡ",
+    "example": "Use the test points to debug the power rail."
+  },
+  {
+    "name": "testing",
+    "trans": [
+      "测试"
+    ],
+    "usphone": "'testɪŋ",
+    "ukphone": "'testɪŋ",
+    "example": "Testing starts after visual inspection."
+  },
+  {
+    "name": "defect",
+    "trans": [
+      "缺陷；故障"
+    ],
+    "usphone": "'diːfekt",
+    "ukphone": "'diːfekt",
+    "example": "Record every defect in the inspection report."
+  },
+  {
+    "name": "datasheet",
+    "trans": [
+      "数据手册；规格书"
+    ],
+    "usphone": "'deɪtəʃiːt",
+    "ukphone": "'deɪtəʃiːt",
+    "example": "Check the datasheet before selecting the part."
+  },
+  {
+    "name": "supplier",
+    "trans": [
+      "供应商"
+    ],
+    "usphone": "sə'plaɪər",
+    "ukphone": "sə'plaɪə",
+    "example": "Ask the supplier for the latest lead time."
+  },
+  {
+    "name": "quotation",
+    "trans": [
+      "报价；报价单"
+    ],
+    "usphone": "kwoʊ'teɪʃn",
+    "ukphone": "kwəʊ'teɪʃn",
+    "example": "We received a quotation for one thousand boards."
+  },
+  {
+    "name": "substrate",
+    "trans": [
+      "基材；基板"
+    ],
+    "usphone": "'sʌbstreɪt",
+    "ukphone": "'sʌbstreɪt",
+    "example": "FR-4 is a common substrate for printed circuit boards."
+  },
+  {
+    "name": "laminate",
+    "trans": [
+      "覆铜板；层压材料"
+    ],
+    "usphone": "'læmɪnət",
+    "ukphone": "'læmɪnət",
+    "example": "Choose a laminate with suitable thermal performance."
+  },
+  {
+    "name": "copper",
+    "trans": [
+      "铜；铜箔"
+    ],
+    "usphone": "'kɑpər",
+    "ukphone": "'kɒpə",
+    "example": "The outer layer uses one-ounce copper."
+  },
+  {
+    "name": "silkscreen",
+    "trans": [
+      "丝印层"
+    ],
+    "usphone": "'sɪlkskriːn",
+    "ukphone": "'sɪlkskriːn",
+    "example": "Place the reference designator on the silkscreen."
+  },
+  {
+    "name": "soldermask",
+    "trans": [
+      "阻焊层；绿油"
+    ],
+    "usphone": "'sɑdərmæsk",
+    "ukphone": "'səʊldəmɑːsk",
+    "example": "The solder mask protects exposed copper from oxidation."
+  },
+  {
+    "name": "plating",
+    "trans": [
+      "电镀；镀层"
+    ],
+    "usphone": "'pleɪtɪŋ",
+    "ukphone": "'pleɪtɪŋ",
+    "example": "The via plating must meet the thickness requirement."
+  },
+  {
+    "name": "drilling",
+    "trans": [
+      "钻孔"
+    ],
+    "usphone": "'drɪlɪŋ",
+    "ukphone": "'drɪlɪŋ",
+    "example": "The drilling file defines all plated holes."
+  },
+  {
+    "name": "aperture",
+    "trans": [
+      "孔径；开口"
+    ],
+    "usphone": "'æpərtʃər",
+    "ukphone": "'æpətʃə",
+    "example": "Check the aperture size for the mounting hole."
+  },
+  {
+    "name": "tolerance",
+    "trans": [
+      "公差"
+    ],
+    "usphone": "'tɑlərəns",
+    "ukphone": "'tɒlərəns",
+    "example": "The hole diameter tolerance is listed on the drawing."
+  },
+  {
+    "name": "dimension",
+    "trans": [
+      "尺寸；规格"
+    ],
+    "usphone": "daɪ'menʃn",
+    "ukphone": "daɪ'menʃn",
+    "example": "Confirm every board dimension before release."
+  },
+  {
+    "name": "thickness",
+    "trans": [
+      "厚度"
+    ],
+    "usphone": "'θɪknəs",
+    "ukphone": "'θɪknəs",
+    "example": "The finished board thickness is 1.6 millimeters."
+  },
+  {
+    "name": "panel",
+    "trans": [
+      "拼板；面板"
+    ],
+    "usphone": "'pænl",
+    "ukphone": "'pænl",
+    "example": "The factory will panel the boards for assembly."
+  },
+  {
+    "name": "depaneling",
+    "trans": [
+      "分板"
+    ],
+    "usphone": "diː'pænlɪŋ",
+    "ukphone": "diː'pænlɪŋ",
+    "example": "Leave enough clearance for depaneling."
+  },
+  {
+    "name": "fiducial",
+    "trans": [
+      "基准点；定位点"
+    ],
+    "usphone": "fɪ'duːʃl",
+    "ukphone": "fɪ'djuːʃl",
+    "example": "Add global fiducials for the pick-and-place machine."
+  },
+  {
+    "name": "stencil",
+    "trans": [
+      "钢网"
+    ],
+    "usphone": "'stensl",
+    "ukphone": "'stensl",
+    "example": "The stencil aperture controls solder paste volume."
+  },
+  {
+    "name": "paste",
+    "trans": [
+      "焊膏；浆料"
+    ],
+    "usphone": "peɪst",
+    "ukphone": "peɪst",
+    "example": "Use lead-free paste for this assembly."
+  },
+  {
+    "name": "reflow",
+    "trans": [
+      "回流焊"
+    ],
+    "usphone": "'riːfloʊ",
+    "ukphone": "'riːfləʊ",
+    "example": "The reflow profile must match the component rating."
+  },
+  {
+    "name": "wave",
+    "trans": [
+      "波峰焊"
+    ],
+    "usphone": "weɪv",
+    "ukphone": "weɪv",
+    "example": "Through-hole parts are soldered by wave process."
+  },
+  {
+    "name": "inspection",
+    "trans": [
+      "检验；检查"
+    ],
+    "usphone": "ɪn'spekʃn",
+    "ukphone": "ɪn'spekʃn",
+    "example": "Inspection checks polarity and solder quality."
+  },
+  {
+    "name": "optical",
+    "trans": [
+      "光学的"
+    ],
+    "usphone": "'ɑptɪkl",
+    "ukphone": "'ɒptɪkl",
+    "example": "Optical inspection detects missing components."
+  },
+  {
+    "name": "xray",
+    "trans": [
+      "X 射线检测"
+    ],
+    "usphone": "'eksreɪ",
+    "ukphone": "'eksreɪ",
+    "example": "Use X-ray inspection for hidden solder joints."
+  },
+  {
+    "name": "yield",
+    "trans": [
+      "良率；产出"
+    ],
+    "usphone": "jiːld",
+    "ukphone": "jiːld",
+    "example": "The first-pass yield improved after the layout update."
+  },
+  {
+    "name": "rework",
+    "trans": [
+      "返工；返修"
+    ],
+    "usphone": "'riːwɜrk",
+    "ukphone": "'riːwɜːk",
+    "example": "Avoid rework by verifying the BOM before assembly."
+  },
+  {
+    "name": "repair",
+    "trans": [
+      "维修；修复"
+    ],
+    "usphone": "rɪ'per",
+    "ukphone": "rɪ'peə",
+    "example": "The technician completed the board repair."
+  },
+  {
+    "name": "failure",
+    "trans": [
+      "失效；故障"
+    ],
+    "usphone": "'feɪljər",
+    "ukphone": "'feɪljə",
+    "example": "The test report describes the failure mode."
+  },
+  {
+    "name": "reliability",
+    "trans": [
+      "可靠性"
+    ],
+    "usphone": "rɪˌlaɪə'bɪləti",
+    "ukphone": "rɪˌlaɪə'bɪləti",
+    "example": "Thermal cycling verifies product reliability."
+  },
+  {
+    "name": "qualification",
+    "trans": [
+      "认证测试；资格确认"
+    ],
+    "usphone": "ˌkwɑlɪfɪ'keɪʃn",
+    "ukphone": "ˌkwɒlɪfɪ'keɪʃn",
+    "example": "The board passed qualification testing."
+  },
+  {
+    "name": "compliance",
+    "trans": [
+      "符合性；合规"
+    ],
+    "usphone": "kəm'plaɪəns",
+    "ukphone": "kəm'plaɪəns",
+    "example": "The design requires EMC compliance."
+  },
+  {
+    "name": "emission",
+    "trans": [
+      "发射；辐射发射"
+    ],
+    "usphone": "ɪ'mɪʃn",
+    "ukphone": "ɪ'mɪʃn",
+    "example": "The test measures electromagnetic emission."
+  },
+  {
+    "name": "interference",
+    "trans": [
+      "干扰"
+    ],
+    "usphone": "ˌɪntər'fɪrəns",
+    "ukphone": "ˌɪntə'fɪərəns",
+    "example": "Separate the analog trace to reduce interference."
+  },
+  {
+    "name": "shielding",
+    "trans": [
+      "屏蔽"
+    ],
+    "usphone": "'ʃiːldɪŋ",
+    "ukphone": "'ʃiːldɪŋ",
+    "example": "Shielding protects the signal from external noise."
+  },
+  {
+    "name": "filter",
+    "trans": [
+      "滤波器；滤波"
+    ],
+    "usphone": "'fɪltər",
+    "ukphone": "'fɪltə",
+    "example": "Add a filter near the power input."
+  },
+  {
+    "name": "oscillator",
+    "trans": [
+      "振荡器"
+    ],
+    "usphone": "'ɑsɪleɪtər",
+    "ukphone": "'ɒsɪleɪtə",
+    "example": "The oscillator provides the clock signal."
+  },
+  {
+    "name": "microcontroller",
+    "trans": [
+      "微控制器"
+    ],
+    "usphone": "ˌmaɪkroʊkən'troʊlər",
+    "ukphone": "ˌmaɪkrəʊkən'trəʊlə",
+    "example": "The microcontroller reads the sensor data."
+  },
+  {
+    "name": "firmware",
+    "trans": [
+      "固件"
+    ],
+    "usphone": "'fɜrmwer",
+    "ukphone": "'fɜːmweə",
+    "example": "Update the firmware through the programming connector."
+  },
+  {
+    "name": "programming",
+    "trans": [
+      "编程；烧录"
+    ],
+    "usphone": "'proʊɡræmɪŋ",
+    "ukphone": "'prəʊɡræmɪŋ",
+    "example": "Programming is performed before final test."
+  },
+  {
+    "name": "interface",
+    "trans": [
+      "接口；界面"
+    ],
+    "usphone": "'ɪntərfeɪs",
+    "ukphone": "'ɪntəfeɪs",
+    "example": "This interface connects the board to the display."
+  },
+  {
+    "name": "signal",
+    "trans": [
+      "信号"
+    ],
+    "usphone": "'sɪɡnl",
+    "ukphone": "'sɪɡnl",
+    "example": "The signal changes state when the button is pressed."
+  },
+  {
+    "name": "frequency",
+    "trans": [
+      "频率"
+    ],
+    "usphone": "'friːkwənsi",
+    "ukphone": "'friːkwənsi",
+    "example": "Measure the clock frequency with an oscilloscope."
+  },
+  {
+    "name": "bandwidth",
+    "trans": [
+      "带宽"
+    ],
+    "usphone": "'bændwɪdθ",
+    "ukphone": "'bændwɪdθ",
+    "example": "The amplifier bandwidth is sufficient for this signal."
+  },
+  {
+    "name": "differential",
+    "trans": [
+      "差分的"
+    ],
+    "usphone": "ˌdɪfə'renʃl",
+    "ukphone": "ˌdɪfə'renʃl",
+    "example": "Route the differential pair with equal lengths."
+  },
+  {
+    "name": "decoupling",
+    "trans": [
+      "去耦"
+    ],
+    "usphone": "diː'kʌplɪŋ",
+    "ukphone": "diː'kʌplɪŋ",
+    "example": "Decoupling capacitors stabilize the supply voltage."
+  },
+  {
+    "name": "thermal",
+    "trans": [
+      "热的；热管理相关"
+    ],
+    "usphone": "'θɜrml",
+    "ukphone": "'θɜːml",
+    "example": "Use thermal vias below the power device."
+  },
+  {
+    "name": "heatsink",
+    "trans": [
+      "散热器"
+    ],
+    "usphone": "'hiːtsɪŋk",
+    "ukphone": "'hiːtsɪŋk",
+    "example": "The heatsink keeps the regulator cool."
+  },
+  {
+    "name": "power",
+    "trans": [
+      "电源；功率"
+    ],
+    "usphone": "'paʊər",
+    "ukphone": "'paʊə",
+    "example": "Disconnect power before replacing a component."
+  },
+  {
+    "name": "regulator",
+    "trans": [
+      "稳压器；调节器"
+    ],
+    "usphone": "'reɡjuleɪtər",
+    "ukphone": "'reɡjuleɪtə",
+    "example": "The regulator converts twelve volts to five volts."
+  },
+  {
+    "name": "converter",
+    "trans": [
+      "转换器"
+    ],
+    "usphone": "kən'vɜrtər",
+    "ukphone": "kən'vɜːtə",
+    "example": "The converter supplies the digital rail."
+  },
+  {
+    "name": "efficiency",
+    "trans": [
+      "效率"
+    ],
+    "usphone": "ɪ'fɪʃnsi",
+    "ukphone": "ɪ'fɪʃnsi",
+    "example": "High efficiency reduces power loss."
+  },
+  {
+    "name": "rating",
+    "trans": [
+      "额定值；等级"
+    ],
+    "usphone": "'reɪtɪŋ",
+    "ukphone": "'reɪtɪŋ",
+    "example": "Select a part with the correct voltage rating."
+  },
+  {
+    "name": "derating",
+    "trans": [
+      "降额使用"
+    ],
+    "usphone": "diː'reɪtɪŋ",
+    "ukphone": "diː'reɪtɪŋ",
+    "example": "Apply derating at high ambient temperature."
+  },
+  {
+    "name": "requirement",
+    "trans": [
+      "需求；要求"
+    ],
+    "usphone": "rɪ'kwaɪərmənt",
+    "ukphone": "rɪ'kwaɪəmənt",
+    "example": "Document each customer requirement before design."
+  },
+  {
+    "name": "specification",
+    "trans": [
+      "规格；技术规范"
+    ],
+    "usphone": "ˌspesɪfɪ'keɪʃn",
+    "ukphone": "ˌspesɪfɪ'keɪʃn",
+    "example": "The specification defines the required interfaces."
+  },
+  {
+    "name": "review",
+    "trans": [
+      "评审；审核"
+    ],
+    "usphone": "rɪ'vjuː",
+    "ukphone": "rɪ'vjuː",
+    "example": "The team will review the design this Friday."
+  },
+  {
+    "name": "approval",
+    "trans": [
+      "批准；认可"
+    ],
+    "usphone": "ə'pruːvl",
+    "ukphone": "ə'pruːvl",
+    "example": "Production starts after engineering approval."
+  },
+  {
+    "name": "release",
+    "trans": [
+      "发布；放行"
+    ],
+    "usphone": "rɪ'liːs",
+    "ukphone": "rɪ'liːs",
+    "example": "Release the manufacturing package after approval."
+  },
+  {
+    "name": "manufacturing",
+    "trans": [
+      "制造；生产"
+    ],
+    "usphone": "ˌmænju'fæktʃərɪŋ",
+    "ukphone": "ˌmænju'fæktʃərɪŋ",
+    "example": "Manufacturing needs the final assembly files."
+  },
+  {
+    "name": "procurement",
+    "trans": [
+      "采购"
+    ],
+    "usphone": "prə'kjʊrmənt",
+    "ukphone": "prə'kjʊəmənt",
+    "example": "Procurement is checking component availability."
+  },
+  {
+    "name": "availability",
+    "trans": [
+      "可获得性；供货情况"
+    ],
+    "usphone": "əˌveɪlə'bɪləti",
+    "ukphone": "əˌveɪlə'bɪləti",
+    "example": "Verify component availability before selecting it."
+  },
+  {
+    "name": "leadtime",
+    "trans": [
+      "交期；交货周期"
+    ],
+    "usphone": "'liːdtaɪm",
+    "ukphone": "'liːdtaɪm",
+    "example": "The supplier quoted a twelve-week lead time."
+  },
+  {
+    "name": "obsolete",
+    "trans": [
+      "停产的；过时的"
+    ],
+    "usphone": "ˌɑbsə'liːt",
+    "ukphone": "ˌɒbsə'liːt",
+    "example": "Find an alternative for the obsolete component."
+  },
+  {
+    "name": "substitute",
+    "trans": [
+      "替代品；替换"
+    ],
+    "usphone": "'sʌbstɪtuːt",
+    "ukphone": "'sʌbstɪtjuːt",
+    "example": "Qualify the substitute before changing the BOM."
+  },
+  {
+    "name": "inventory",
+    "trans": [
+      "库存"
+    ],
+    "usphone": "'ɪnvəntɔri",
+    "ukphone": "'ɪnvəntri",
+    "example": "Check inventory before placing a purchase order."
+  },
+  {
+    "name": "traceability",
+    "trans": [
+      "可追溯性"
+    ],
+    "usphone": "ˌtreɪsə'bɪləti",
+    "ukphone": "ˌtreɪsə'bɪləti",
+    "example": "Traceability links each board to its production record."
+  },
+  {
+    "name": "documentation",
+    "trans": [
+      "文档；资料"
+    ],
+    "usphone": "ˌdɑkjumen'teɪʃn",
+    "ukphone": "ˌdɒkjumen'teɪʃn",
+    "example": "Keep the documentation synchronized with the design."
+  },
+  {
+    "name": "checklist",
+    "trans": [
+      "检查清单"
+    ],
+    "usphone": "'tʃeklɪst",
+    "ukphone": "'tʃeklɪst",
+    "example": "Use the release checklist before sending files."
+  },
+  {
+    "name": "shipment",
+    "trans": [
+      "装运；发货"
+    ],
+    "usphone": "'ʃɪpmənt",
+    "ukphone": "'ʃɪpmənt",
+    "example": "The first board shipment arrived this morning."
+  },
+  {
+    "name": "packaging",
+    "trans": [
+      "包装"
+    ],
+    "usphone": "'pækɪdʒɪŋ",
+    "ukphone": "'pækɪdʒɪŋ",
+    "example": "Use anti-static packaging for sensitive boards."
+  },
+  {
+    "name": "groundplane",
+    "trans": [
+      "接地平面"
+    ],
+    "usphone": "'ɡraʊndpleɪn",
+    "ukphone": "'ɡraʊndpleɪn",
+    "example": "Use a solid ground plane beneath the high-speed signal."
+  },
+  {
+    "name": "testpoint",
+    "trans": [
+      "测试点"
+    ],
+    "usphone": "'testpɔɪnt",
+    "ukphone": "'testpɔɪnt",
+    "example": "Add a test point for every critical power rail."
+  },
+  {
+    "name": "routing",
+    "trans": [
+      "布线；走线"
+    ],
+    "usphone": "'ruːtɪŋ",
+    "ukphone": "'ruːtɪŋ",
+    "example": "Complete the routing before the design review."
+  },
+  {
+    "name": "reference designator",
+    "trans": [
+      "位号；参考标号"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bill of materials",
+    "trans": [
+      "物料清单；BOM"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "manufacturer part number",
+    "trans": [
+      "制造商料号；MPN"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "approved vendor list",
+    "trans": [
+      "合格供应商清单；AVL"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "alternate part",
+    "trans": [
+      "替代料；可替换元件"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lifecycle status",
+    "trans": [
+      "生命周期状态"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "minimum order quantity",
+    "trans": [
+      "最小订购量；MOQ"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ceramic capacitor",
+    "trans": [
+      "陶瓷电容器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "common-mode choke",
+    "trans": [
+      "共模扼流圈"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ferrite bead",
+    "trans": [
+      "磁珠"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "crystal resonator",
+    "trans": [
+      "晶体谐振器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "transient voltage suppressor",
+    "trans": [
+      "瞬态电压抑制器；TVS"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "field-effect transistor",
+    "trans": [
+      "场效应晶体管；FET"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "operational amplifier",
+    "trans": [
+      "运算放大器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pin header",
+    "trans": [
+      "排针连接器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "power inductor",
+    "trans": [
+      "功率电感"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "current-sense resistor",
+    "trans": [
+      "电流采样电阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electrical rule check",
+    "trans": [
+      "电气规则检查；ERC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "netlist",
+    "trans": [
+      "网表"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "net label",
+    "trans": [
+      "网络标签"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hierarchical sheet",
+    "trans": [
+      "层次原理图页"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "power port",
+    "trans": [
+      "电源端口"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "no-connect flag",
+    "trans": [
+      "未连接标记"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "design block",
+    "trans": [
+      "设计模块"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pin type",
+    "trans": [
+      "引脚类型"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pinout",
+    "trans": [
+      "引脚定义；引脚排列"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cross-probe",
+    "trans": [
+      "交叉定位；原理图/PCB 联动"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "annotation",
+    "trans": [
+      "位号注释；标注"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "back annotation",
+    "trans": [
+      "反向注释"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "assembly variant",
+    "trans": [
+      "装配变体"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "harness connector",
+    "trans": [
+      "线束连接器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "schematic capture",
+    "trans": [
+      "原理图录入"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "junction",
+    "trans": [
+      "连接点；结点"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bus entry",
+    "trans": [
+      "总线入口"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "stackup",
+    "trans": [
+      "叠层结构"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "prepreg",
+    "trans": [
+      "半固化片"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "core",
+    "trans": [
+      "芯板；芯材"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dielectric constant",
+    "trans": [
+      "介电常数；Dk"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dissipation factor",
+    "trans": [
+      "介质损耗因子；Df"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "glass transition temperature",
+    "trans": [
+      "玻璃化转变温度；Tg"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "coefficient of thermal expansion",
+    "trans": [
+      "热膨胀系数；CTE"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "copper weight",
+    "trans": [
+      "铜箔厚度规格；铜重"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "controlled impedance",
+    "trans": [
+      "受控阻抗"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "stripline",
+    "trans": [
+      "带状线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "microstrip",
+    "trans": [
+      "微带线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "differential impedance",
+    "trans": [
+      "差分阻抗"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "impedance coupon",
+    "trans": [
+      "阻抗测试条"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "resin content",
+    "trans": [
+      "树脂含量"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "halogen-free",
+    "trans": [
+      "无卤"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "high-Tg laminate",
+    "trans": [
+      "高 Tg 覆铜板"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "low-loss laminate",
+    "trans": [
+      "低损耗覆铜板"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "plated through-hole",
+    "trans": [
+      "金属化通孔；PTH"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "non-plated through-hole",
+    "trans": [
+      "非金属化孔；NPTH"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "embedded resistor",
+    "trans": [
+      "埋入式电阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "embedded capacitor",
+    "trans": [
+      "埋入式电容"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "microvia",
+    "trans": [
+      "微孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "via-in-pad",
+    "trans": [
+      "盘中孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tented via",
+    "trans": [
+      "盖油过孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "plugged via",
+    "trans": [
+      "塞孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "annular ring",
+    "trans": [
+      "孔环；焊盘环"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "solder paste aperture",
+    "trans": [
+      "钢网开口"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal relief",
+    "trans": [
+      "热焊盘；热隔离"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "padstack",
+    "trans": [
+      "焊盘叠层定义"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "land pattern",
+    "trans": [
+      "焊盘图形；焊盘设计"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "castellated hole",
+    "trans": [
+      "半孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "edge plating",
+    "trans": [
+      "板边镀铜"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "backdrill",
+    "trans": [
+      "背钻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "aspect ratio",
+    "trans": [
+      "纵横比；孔径深度比"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "component courtyard",
+    "trans": [
+      "元件庭院层"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "keepout",
+    "trans": [
+      "禁布区；禁止区域"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "board outline",
+    "trans": [
+      "板框；板外形"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mechanical layer",
+    "trans": [
+      "机械层"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mounting hole",
+    "trans": [
+      "安装孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "slot",
+    "trans": [
+      "槽孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "datum",
+    "trans": [
+      "基准；基准点"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "coplanarity",
+    "trans": [
+      "共面度"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "component height",
+    "trans": [
+      "元件高度"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pick-and-place",
+    "trans": [
+      "贴片坐标；贴装"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "centroid file",
+    "trans": [
+      "坐标文件"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "rotation angle",
+    "trans": [
+      "旋转角度"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "polarity mark",
+    "trans": [
+      "极性标识"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pin 1 indicator",
+    "trans": [
+      "1 脚标识"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "assembly drawing",
+    "trans": [
+      "装配图"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fabrication drawing",
+    "trans": [
+      "制板图"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "3D model",
+    "trans": [
+      "三维模型"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "trace width",
+    "trans": [
+      "线宽"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "trace length",
+    "trans": [
+      "线长"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "length matching",
+    "trans": [
+      "等长匹配"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "matched delay",
+    "trans": [
+      "时延匹配"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "differential pair",
+    "trans": [
+      "差分对"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "return path",
+    "trans": [
+      "回流路径"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "return current",
+    "trans": [
+      "回流电流"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "reference plane",
+    "trans": [
+      "参考平面"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "crosstalk",
+    "trans": [
+      "串扰"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "skew",
+    "trans": [
+      "时序偏斜"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "rise time",
+    "trans": [
+      "上升时间"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "transmission line",
+    "trans": [
+      "传输线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "termination resistor",
+    "trans": [
+      "终端电阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "series termination",
+    "trans": [
+      "串联端接"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "stub",
+    "trans": [
+      "支线；分支线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "via stub",
+    "trans": [
+      "过孔残桩"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "routing channel",
+    "trans": [
+      "布线通道"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "power plane",
+    "trans": [
+      "电源平面"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "split plane",
+    "trans": [
+      "分割平面"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "power integrity",
+    "trans": [
+      "电源完整性；PI"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "power distribution network",
+    "trans": [
+      "电源分配网络；PDN"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "decoupling network",
+    "trans": [
+      "去耦网络"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bulk capacitor",
+    "trans": [
+      "储能电容；大容量电容"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "local decoupling",
+    "trans": [
+      "局部去耦"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "plane capacitance",
+    "trans": [
+      "平面电容"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "voltage ripple",
+    "trans": [
+      "电压纹波"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "IR drop",
+    "trans": [
+      "压降；IR 压降"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "current density",
+    "trans": [
+      "电流密度"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ground bounce",
+    "trans": [
+      "地弹"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "star ground",
+    "trans": [
+      "星形接地"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "chassis ground",
+    "trans": [
+      "机壳地"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "analog ground",
+    "trans": [
+      "模拟地"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "digital ground",
+    "trans": [
+      "数字地"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "copper pour",
+    "trans": [
+      "覆铜区域"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "design rule check",
+    "trans": [
+      "设计规则检查；DRC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "unconnected net",
+    "trans": [
+      "未连接网络"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "clearance violation",
+    "trans": [
+      "间距违规"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "solder mask sliver",
+    "trans": [
+      "阻焊桥；阻焊细条"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "silkscreen over pad",
+    "trans": [
+      "丝印压焊盘"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "drill map",
+    "trans": [
+      "钻孔图"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "drill file",
+    "trans": [
+      "钻孔文件"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "Gerber X2",
+    "trans": [
+      "Gerber X2 制造数据"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "IPC-2581",
+    "trans": [
+      "IPC-2581 制造数据格式"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ODB++",
+    "trans": [
+      "ODB++ 制造数据格式"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fabrication note",
+    "trans": [
+      "制板说明"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "layer mapping",
+    "trans": [
+      "层映射"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "assembly file",
+    "trans": [
+      "装配文件"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "component placement file",
+    "trans": [
+      "元件贴装坐标文件"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "netlist export",
+    "trans": [
+      "网表导出"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "revision control",
+    "trans": [
+      "版本控制"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "photoresist",
+    "trans": [
+      "光刻胶；感光抗蚀剂"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "etching",
+    "trans": [
+      "蚀刻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electroless copper",
+    "trans": [
+      "化学沉铜"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electrolytic copper",
+    "trans": [
+      "电解铜；电镀铜"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "through-hole plating",
+    "trans": [
+      "孔金属化"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lamination cycle",
+    "trans": [
+      "压合周期"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "solder mask coating",
+    "trans": [
+      "阻焊涂覆"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "legend printing",
+    "trans": [
+      "字符印刷"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "surface finish",
+    "trans": [
+      "表面处理"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "HASL",
+    "trans": [
+      "热风整平；HASL"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ENIG",
+    "trans": [
+      "化学镍金；ENIG"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "OSP",
+    "trans": [
+      "有机保焊膜；OSP"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "immersion tin",
+    "trans": [
+      "沉锡"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "immersion silver",
+    "trans": [
+      "沉银"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "routing tab",
+    "trans": [
+      "铣边连接桥"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "V-score",
+    "trans": [
+      "V 槽；V 割"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "breakaway tab",
+    "trans": [
+      "掰板连接桥"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "surface-mount device",
+    "trans": [
+      "表面贴装器件；SMD"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "through-hole technology",
+    "trans": [
+      "通孔插装技术；THT"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pick-and-place machine",
+    "trans": [
+      "贴片机"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "solder paste printing",
+    "trans": [
+      "锡膏印刷"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "reflow profile",
+    "trans": [
+      "回流焊温度曲线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wave soldering",
+    "trans": [
+      "波峰焊接"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "selective soldering",
+    "trans": [
+      "选择性焊接"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "solder joint",
+    "trans": [
+      "焊点；焊接接头"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wetting",
+    "trans": [
+      "润湿"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tombstoning",
+    "trans": [
+      "立碑；曼哈顿现象"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "head-in-pillow",
+    "trans": [
+      "枕头效应；头枕缺陷"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "voiding",
+    "trans": [
+      "空洞；气孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "insufficient solder",
+    "trans": [
+      "少锡"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "component misalignment",
+    "trans": [
+      "元件偏移"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "board warpage",
+    "trans": [
+      "板翘曲"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "moisture sensitivity level",
+    "trans": [
+      "湿敏等级；MSL"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bake-out",
+    "trans": [
+      "烘烤除湿"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "DFM",
+    "trans": [
+      "可制造性设计"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "DFA",
+    "trans": [
+      "可装配性设计"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "DFT",
+    "trans": [
+      "可测试性设计"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "AOI",
+    "trans": [
+      "自动光学检测"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "automated X-ray inspection",
+    "trans": [
+      "自动 X 射线检测；AXI"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "in-circuit test",
+    "trans": [
+      "在线测试；ICT"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "functional test",
+    "trans": [
+      "功能测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "boundary scan",
+    "trans": [
+      "边界扫描"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "flying probe test",
+    "trans": [
+      "飞针测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bed-of-nails fixture",
+    "trans": [
+      "针床测试夹具"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "test coverage",
+    "trans": [
+      "测试覆盖率"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "design for reliability",
+    "trans": [
+      "可靠性设计；DFR"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "first article inspection",
+    "trans": [
+      "首件检验；FAI"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "process capability",
+    "trans": [
+      "过程能力"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "defects per million",
+    "trans": [
+      "每百万缺陷数；DPM"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nonconformance",
+    "trans": [
+      "不符合项"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "root cause analysis",
+    "trans": [
+      "根因分析；RCA"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electromagnetic interference",
+    "trans": [
+      "电磁干扰；EMI"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electromagnetic compatibility",
+    "trans": [
+      "电磁兼容；EMC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electrostatic discharge",
+    "trans": [
+      "静电放电；ESD"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electrical fast transient burst",
+    "trans": [
+      "电快速瞬变脉冲群；EFT"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "surge immunity",
+    "trans": [
+      "浪涌抗扰度"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "radiated emission",
+    "trans": [
+      "辐射发射"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "conducted emission",
+    "trans": [
+      "传导发射"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "radiated immunity",
+    "trans": [
+      "辐射抗扰度"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "conducted immunity",
+    "trans": [
+      "传导抗扰度"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "common-mode noise",
+    "trans": [
+      "共模噪声"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "differential-mode noise",
+    "trans": [
+      "差模噪声"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shielding can",
+    "trans": [
+      "屏蔽罩"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "guard trace",
+    "trans": [
+      "保护走线；护环"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ground stitching via",
+    "trans": [
+      "地缝合过孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "feedthrough capacitor",
+    "trans": [
+      "穿心电容"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "TVS diode",
+    "trans": [
+      "瞬态抑制二极管；TVS 二极管"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "teardrop",
+    "trans": [
+      "泪滴焊盘；泪滴连接"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "neckdown",
+    "trans": [
+      "缩颈走线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tombstone",
+    "trans": [
+      "立碑缺陷"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "whisker",
+    "trans": [
+      "锡须；金属晶须"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "delamination",
+    "trans": [
+      "分层；层间剥离"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bow and twist",
+    "trans": [
+      "翘曲与扭曲"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "counterbore",
+    "trans": [
+      "柱形沉孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "countersink",
+    "trans": [
+      "锥形沉孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "blind via",
+    "trans": [
+      "盲孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "buried via",
+    "trans": [
+      "埋孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "controlled depth drilling",
+    "trans": [
+      "控深钻孔"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "solder bridge",
+    "trans": [
+      "连锡；锡桥"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "non-wetting",
+    "trans": [
+      "润湿不良；不上锡"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tab routing",
+    "trans": [
+      "邮票孔分板；连接片铣槽"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "solderability",
+    "trans": [
+      "可焊性"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "peelable mask",
+    "trans": [
+      "可剥离阻焊膜"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "carbon ink",
+    "trans": [
+      "碳油墨；碳膜印刷"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "conformal coating",
+    "trans": [
+      "三防漆；保形涂层"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  }
+]

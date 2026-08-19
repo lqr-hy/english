@@ -80,6 +80,17 @@
   transform: translateY(-4px);
 }
 
+.home-content-card--industry {
+  border-color: var(--color-primary-mid);
+}
+
+.home-entry-hint {
+  margin: 14px 0 0;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
 .home-content-card-icon {
   flex-shrink: 0;
   width: 56px;
@@ -118,6 +129,42 @@
   display: block;
 }
 
+.home-section-heading {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.home-section-heading h2 {
+  margin: 0;
+  color: var(--color-primary-dark);
+  font-size: 18px;
+}
+
+.home-section-heading p {
+  margin: 4px 0 0;
+  max-width: 620px;
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.home-content-card-icon--pcb {
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+}
+
+.home-content-card-icon--bms {
+  background: #dcfce7;
+  border-color: #86efac;
+}
+
+.home-content-card-icon--reception {
+  background: #fef3c7;
+  border-color: #fcd34d;
+}
+
 .home-coming-soon {
   margin-top: 24px;
   text-align: center;
@@ -131,5 +178,10 @@
 @media (max-width: 640px) {
   .home-content-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }

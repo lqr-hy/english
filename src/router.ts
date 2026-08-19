@@ -7,6 +7,8 @@ import FavoritesPage from './FavoritesPage.tsx'
 import AppShell from './AppShell.tsx'
 import VocabStudyPage from './VocabStudyPage.tsx'
 import VocabChapterPage from './VocabChapterPage.tsx'
+import ResourcesPage from './ResourcesPage.tsx'
+import IndustryPage from './IndustryPage.tsx'
 
 const router = createHashRouter(
   [
@@ -33,6 +35,14 @@ const router = createHashRouter(
         {
           path: 'vocab/:bookId/:chapterNum',
           Component: VocabChapterPage,
+        },
+        {
+          path: 'resources',
+          Component: ResourcesPage,
+        },
+        {
+          path: 'industry',
+          Component: IndustryPage,
         },
         {
           path: 'records/mistakes',

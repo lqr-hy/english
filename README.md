@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# English Study
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个面向实际工作场景的英语学习应用，结合通用英语、商务英语和行业英语资源。
 
-Currently, two official plugins are available:
+## 学习内容
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **新概念英语**：NCE1-NCE4 的音频和字幕课程。
+- **商务英语**：BEC 词库学习与复习。
+- **PCB 与电子模块英语**：原理图、元件、封装、制造和调试核心词。
+- **BMS 电池管理英语**：电芯、均衡、保护、监测和安全核心词。
+- **商务接待英语**：来访、预约、会议、酒店和客户沟通核心词。
 
-## Expanding the ESLint configuration
+每个行业词条包含中文释义、发音和工作场景例句，并可使用卡片、英译中、中译英、选择题和拼写挑战模式学习。
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 行业资源来源
 
-- Configure the top-level `parserOptions` property like this:
+站内的行业词库用于学习与复习；原始英文资料请在应用的“行业英语资源索引”中访问：
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- PCB：Awesome Electronics、SparkFun KiCad Libraries、KiCad Documentation
+- BMS：foxBMS、LibreSolar BMS Firmware、Battery University
+- 商务接待：Taskmaster、MultiWOZ、British Council Business English
+
+请遵守各外部资源的许可证与使用条款。本站不镜像外部大型数据集或原始文档。
+
+## 本地开发
+
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 校验
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run lint
+npm run build
 ```

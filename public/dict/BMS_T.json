@@ -1,0 +1,2662 @@
+[
+  {
+    "name": "battery",
+    "trans": [
+      "电池；电池组"
+    ],
+    "usphone": "'bætəri",
+    "ukphone": "'bætəri",
+    "example": "The battery is fully charged before shipment."
+  },
+  {
+    "name": "cell",
+    "trans": [
+      "电芯；单体电池"
+    ],
+    "usphone": "sel",
+    "ukphone": "sel",
+    "example": "Each cell voltage is measured by the BMS."
+  },
+  {
+    "name": "module",
+    "trans": [
+      "模块；电池模组"
+    ],
+    "usphone": "'mɑdʒuːl",
+    "ukphone": "'mɒdjuːl",
+    "example": "The module contains twelve cells in series."
+  },
+  {
+    "name": "pack",
+    "trans": [
+      "电池包"
+    ],
+    "usphone": "pæk",
+    "ukphone": "pæk",
+    "example": "The pack temperature must remain within the safe range."
+  },
+  {
+    "name": "charging",
+    "trans": [
+      "充电"
+    ],
+    "usphone": "'tʃɑrdʒɪŋ",
+    "ukphone": "'tʃɑːdʒɪŋ",
+    "example": "Charging stops when a cell reaches its voltage limit."
+  },
+  {
+    "name": "discharge",
+    "trans": [
+      "放电；排出"
+    ],
+    "usphone": "dɪs'tʃɑrdʒ",
+    "ukphone": "dɪs'tʃɑːdʒ",
+    "example": "The discharge current is limited at low temperature."
+  },
+  {
+    "name": "capacity",
+    "trans": [
+      "容量"
+    ],
+    "usphone": "kə'pæsəti",
+    "ukphone": "kə'pæsəti",
+    "example": "The usable capacity decreases as the battery ages."
+  },
+  {
+    "name": "voltage",
+    "trans": [
+      "电压"
+    ],
+    "usphone": "'voʊltɪdʒ",
+    "ukphone": "'vəʊltɪdʒ",
+    "example": "The voltage reading is outside the expected range."
+  },
+  {
+    "name": "current",
+    "trans": [
+      "电流"
+    ],
+    "usphone": "'kɜrənt",
+    "ukphone": "'kʌrənt",
+    "example": "The sensor reports the current every second."
+  },
+  {
+    "name": "temperature",
+    "trans": [
+      "温度"
+    ],
+    "usphone": "'temprətʃər",
+    "ukphone": "'temprətʃə",
+    "example": "Temperature monitoring protects the cells from overheating."
+  },
+  {
+    "name": "monitoring",
+    "trans": [
+      "监测；监控"
+    ],
+    "usphone": "'mɑnɪtərɪŋ",
+    "ukphone": "'mɒnɪtərɪŋ",
+    "example": "Continuous monitoring is required during charging."
+  },
+  {
+    "name": "balancing",
+    "trans": [
+      "均衡；均衡管理"
+    ],
+    "usphone": "'bælənsɪŋ",
+    "ukphone": "'bælənsɪŋ",
+    "example": "Balancing reduces the voltage difference between cells."
+  },
+  {
+    "name": "protection",
+    "trans": [
+      "保护"
+    ],
+    "usphone": "prə'tekʃn",
+    "ukphone": "prə'tekʃn",
+    "example": "The protection function opens the contactor during a fault."
+  },
+  {
+    "name": "overvoltage",
+    "trans": [
+      "过压"
+    ],
+    "usphone": "ˌoʊvər'voʊltɪdʒ",
+    "ukphone": "ˌəʊvə'vəʊltɪdʒ",
+    "example": "An overvoltage event is stored in the fault log."
+  },
+  {
+    "name": "undervoltage",
+    "trans": [
+      "欠压"
+    ],
+    "usphone": "ˌʌndər'voʊltɪdʒ",
+    "ukphone": "ˌʌndə'vəʊltɪdʒ",
+    "example": "Undervoltage protection prevents deep discharge."
+  },
+  {
+    "name": "overcurrent",
+    "trans": [
+      "过流"
+    ],
+    "usphone": "ˌoʊvər'kɜrənt",
+    "ukphone": "ˌəʊvə'kʌrənt",
+    "example": "The fuse protects the circuit against overcurrent."
+  },
+  {
+    "name": "overheat",
+    "trans": [
+      "过热"
+    ],
+    "usphone": "ˌoʊvər'hiːt",
+    "ukphone": "ˌəʊvə'hiːt",
+    "example": "The system will stop if the cells overheat."
+  },
+  {
+    "name": "fault",
+    "trans": [
+      "故障；异常"
+    ],
+    "usphone": "fɔlt",
+    "ukphone": "fɔːlt",
+    "example": "Clear the fault only after finding its cause."
+  },
+  {
+    "name": "alarm",
+    "trans": [
+      "报警；警报"
+    ],
+    "usphone": "ə'lɑrm",
+    "ukphone": "ə'lɑːm",
+    "example": "The alarm warns the operator about a critical condition."
+  },
+  {
+    "name": "contactor",
+    "trans": [
+      "接触器"
+    ],
+    "usphone": "kən'tæktər",
+    "ukphone": "kən'tæktə",
+    "example": "The contactor disconnects the pack from the load."
+  },
+  {
+    "name": "fuse",
+    "trans": [
+      "保险丝；熔断器"
+    ],
+    "usphone": "fjuːz",
+    "ukphone": "fjuːz",
+    "example": "Replace the fuse with the specified rating."
+  },
+  {
+    "name": "sensor",
+    "trans": [
+      "传感器"
+    ],
+    "usphone": "'sensər",
+    "ukphone": "'sensə",
+    "example": "The sensor detects the battery temperature."
+  },
+  {
+    "name": "charger",
+    "trans": [
+      "充电器"
+    ],
+    "usphone": "'tʃɑrdʒər",
+    "ukphone": "'tʃɑːdʒə",
+    "example": "Connect the charger after the safety check."
+  },
+  {
+    "name": "connector",
+    "trans": [
+      "连接器"
+    ],
+    "usphone": "kə'nektər",
+    "ukphone": "kə'nektə",
+    "example": "Inspect the connector for damage before use."
+  },
+  {
+    "name": "firmware",
+    "trans": [
+      "固件"
+    ],
+    "usphone": "'fɜrmwer",
+    "ukphone": "'fɜːmweə",
+    "example": "The new firmware improves fault detection."
+  },
+  {
+    "name": "calibration",
+    "trans": [
+      "校准"
+    ],
+    "usphone": "ˌkælə'breɪʃn",
+    "ukphone": "ˌkælɪ'breɪʃn",
+    "example": "Calibration improves the accuracy of the current sensor."
+  },
+  {
+    "name": "safety",
+    "trans": [
+      "安全"
+    ],
+    "usphone": "'seɪfti",
+    "ukphone": "'seɪfti",
+    "example": "Safety is the first priority in battery design."
+  },
+  {
+    "name": "lifecycle",
+    "trans": [
+      "生命周期；循环寿命"
+    ],
+    "usphone": "'laɪfsaɪkl",
+    "ukphone": "'laɪfsaɪkl",
+    "example": "The lifecycle test simulates normal product use."
+  },
+  {
+    "name": "diagnostic",
+    "trans": [
+      "诊断；诊断信息"
+    ],
+    "usphone": "ˌdaɪəɡ'nɑstɪk",
+    "ukphone": "ˌdaɪəɡ'nɒstɪk",
+    "example": "Read the diagnostic data before replacing a part."
+  },
+  {
+    "name": "maintenance",
+    "trans": [
+      "维护；保养"
+    ],
+    "usphone": "'meɪntənəns",
+    "ukphone": "'meɪntənəns",
+    "example": "Follow the maintenance schedule to keep the pack reliable."
+  },
+  {
+    "name": "anode",
+    "trans": [
+      "阳极；负极"
+    ],
+    "usphone": "'ænoʊd",
+    "ukphone": "'ænəʊd",
+    "example": "Lithium ions move away from the anode during discharge."
+  },
+  {
+    "name": "cathode",
+    "trans": [
+      "阴极；正极"
+    ],
+    "usphone": "'kæθoʊd",
+    "ukphone": "'kæθəʊd",
+    "example": "The cathode material affects the energy density."
+  },
+  {
+    "name": "electrolyte",
+    "trans": [
+      "电解液"
+    ],
+    "usphone": "ɪ'lektrəlaɪt",
+    "ukphone": "ɪ'lektrəlaɪt",
+    "example": "The electrolyte transports ions between the electrodes."
+  },
+  {
+    "name": "separator",
+    "trans": [
+      "隔膜；分离器"
+    ],
+    "usphone": "'sepəreɪtər",
+    "ukphone": "'sepəreɪtə",
+    "example": "The separator prevents an internal short circuit."
+  },
+  {
+    "name": "terminal",
+    "trans": [
+      "端子；终端"
+    ],
+    "usphone": "'tɜrmɪnl",
+    "ukphone": "'tɜːmɪnl",
+    "example": "Keep the positive terminal covered during service."
+  },
+  {
+    "name": "busbar",
+    "trans": [
+      "母排；汇流排"
+    ],
+    "usphone": "'bʌsbɑr",
+    "ukphone": "'bʌsbɑː",
+    "example": "The copper busbar carries current between modules."
+  },
+  {
+    "name": "harness",
+    "trans": [
+      "线束"
+    ],
+    "usphone": "'hɑrnəs",
+    "ukphone": "'hɑːnəs",
+    "example": "Secure the harness before closing the enclosure."
+  },
+  {
+    "name": "enclosure",
+    "trans": [
+      "外壳；机箱"
+    ],
+    "usphone": "ɪn'kloʊʒər",
+    "ukphone": "ɪn'kləʊʒə",
+    "example": "The enclosure protects the battery from water and dust."
+  },
+  {
+    "name": "insulation",
+    "trans": [
+      "绝缘；绝缘层"
+    ],
+    "usphone": "ˌɪnsə'leɪʃn",
+    "ukphone": "ˌɪnsjʊ'leɪʃn",
+    "example": "Inspect the insulation before applying high voltage."
+  },
+  {
+    "name": "isolation",
+    "trans": [
+      "隔离；绝缘隔离"
+    ],
+    "usphone": "ˌaɪsə'leɪʃn",
+    "ukphone": "ˌaɪsə'leɪʃn",
+    "example": "The isolation test checks for leakage to the chassis."
+  },
+  {
+    "name": "leakage",
+    "trans": [
+      "泄漏；漏电"
+    ],
+    "usphone": "'liːkɪdʒ",
+    "ukphone": "'liːkɪdʒ",
+    "example": "Leakage current must remain below the specified limit."
+  },
+  {
+    "name": "shortcircuit",
+    "trans": [
+      "短路"
+    ],
+    "usphone": "'ʃɔrt'sɜrkɪt",
+    "ukphone": "'ʃɔːt'sɜːkɪt",
+    "example": "The protection circuit reacts immediately to a short circuit."
+  },
+  {
+    "name": "interlock",
+    "trans": [
+      "互锁；高压互锁"
+    ],
+    "usphone": "'ɪntərlɑk",
+    "ukphone": "'ɪntəlɒk",
+    "example": "The interlock loop detects an open service connector."
+  },
+  {
+    "name": "precharge",
+    "trans": [
+      "预充电"
+    ],
+    "usphone": "'priːtʃɑrdʒ",
+    "ukphone": "'priːtʃɑːdʒ",
+    "example": "Precharge limits the inrush current at startup."
+  },
+  {
+    "name": "relay",
+    "trans": [
+      "继电器"
+    ],
+    "usphone": "'riːleɪ",
+    "ukphone": "'riːleɪ",
+    "example": "The relay closes after the precharge sequence completes."
+  },
+  {
+    "name": "contactorweld",
+    "trans": [
+      "接触器粘连"
+    ],
+    "usphone": "kən'tæktər weld",
+    "ukphone": "kən'tæktə weld",
+    "example": "The diagnostic detects a contactor weld before startup."
+  },
+  {
+    "name": "inverter",
+    "trans": [
+      "逆变器"
+    ],
+    "usphone": "ɪn'vɜrtər",
+    "ukphone": "ɪn'vɜːtə",
+    "example": "The battery provides power to the inverter."
+  },
+  {
+    "name": "load",
+    "trans": [
+      "负载"
+    ],
+    "usphone": "loʊd",
+    "ukphone": "ləʊd",
+    "example": "Disconnect the load before servicing the pack."
+  },
+  {
+    "name": "efficiency",
+    "trans": [
+      "效率"
+    ],
+    "usphone": "ɪ'fɪʃnsi",
+    "ukphone": "ɪ'fɪʃnsi",
+    "example": "Higher efficiency reduces heat generation."
+  },
+  {
+    "name": "energy",
+    "trans": [
+      "能量；电能"
+    ],
+    "usphone": "'enərdʒi",
+    "ukphone": "'enədʒi",
+    "example": "The system estimates the remaining energy."
+  },
+  {
+    "name": "density",
+    "trans": [
+      "密度"
+    ],
+    "usphone": "'densəti",
+    "ukphone": "'densəti",
+    "example": "This chemistry offers high energy density."
+  },
+  {
+    "name": "range",
+    "trans": [
+      "续航距离；范围"
+    ],
+    "usphone": "reɪndʒ",
+    "ukphone": "reɪndʒ",
+    "example": "Cold weather can reduce the driving range."
+  },
+  {
+    "name": "degradation",
+    "trans": [
+      "衰减；退化"
+    ],
+    "usphone": "ˌdeɡrə'deɪʃn",
+    "ukphone": "ˌdeɡrə'deɪʃn",
+    "example": "High temperature accelerates battery degradation."
+  },
+  {
+    "name": "aging",
+    "trans": [
+      "老化"
+    ],
+    "usphone": "'eɪdʒɪŋ",
+    "ukphone": "'eɪdʒɪŋ",
+    "example": "Aging tests evaluate long-term cell performance."
+  },
+  {
+    "name": "cycle",
+    "trans": [
+      "循环；周期"
+    ],
+    "usphone": "'saɪkl",
+    "ukphone": "'saɪkl",
+    "example": "One cycle includes a full charge and discharge."
+  },
+  {
+    "name": "chargingrate",
+    "trans": [
+      "充电倍率"
+    ],
+    "usphone": "'tʃɑrdʒɪŋ reɪt",
+    "ukphone": "'tʃɑːdʒɪŋ reɪt",
+    "example": "Follow the recommended charging rate for this cell."
+  },
+  {
+    "name": "dischargerate",
+    "trans": [
+      "放电倍率"
+    ],
+    "usphone": "dɪs'tʃɑrdʒ reɪt",
+    "ukphone": "dɪs'tʃɑːdʒ reɪt",
+    "example": "The discharge rate is limited by the cell specification."
+  },
+  {
+    "name": "threshold",
+    "trans": [
+      "阈值"
+    ],
+    "usphone": "'θreʃhoʊld",
+    "ukphone": "'θreʃhəʊld",
+    "example": "Set the warning threshold below the protection limit."
+  },
+  {
+    "name": "limit",
+    "trans": [
+      "限值；限制"
+    ],
+    "usphone": "'lɪmɪt",
+    "ukphone": "'lɪmɪt",
+    "example": "Never operate beyond the current limit."
+  },
+  {
+    "name": "parameter",
+    "trans": [
+      "参数"
+    ],
+    "usphone": "pə'ræmɪtər",
+    "ukphone": "pə'ræmɪtə",
+    "example": "Store the parameter in nonvolatile memory."
+  },
+  {
+    "name": "configuration",
+    "trans": [
+      "配置"
+    ],
+    "usphone": "kənˌfɪɡjə'reɪʃn",
+    "ukphone": "kənˌfɪɡə'reɪʃn",
+    "example": "Check the configuration before flashing firmware."
+  },
+  {
+    "name": "algorithm",
+    "trans": [
+      "算法"
+    ],
+    "usphone": "'ælɡərɪðəm",
+    "ukphone": "'ælɡərɪðəm",
+    "example": "The algorithm estimates the state of charge."
+  },
+  {
+    "name": "estimation",
+    "trans": [
+      "估算；估计"
+    ],
+    "usphone": "ˌestɪ'meɪʃn",
+    "ukphone": "ˌestɪ'meɪʃn",
+    "example": "Accurate estimation requires calibrated sensors."
+  },
+  {
+    "name": "accuracy",
+    "trans": [
+      "准确度"
+    ],
+    "usphone": "'ækjərəsi",
+    "ukphone": "'ækjərəsi",
+    "example": "The voltage measurement accuracy is one millivolt."
+  },
+  {
+    "name": "sampling",
+    "trans": [
+      "采样"
+    ],
+    "usphone": "'sæmplɪŋ",
+    "ukphone": "'sɑːmplɪŋ",
+    "example": "Sampling occurs at a fixed interval."
+  },
+  {
+    "name": "telemetry",
+    "trans": [
+      "遥测；遥信数据"
+    ],
+    "usphone": "tə'lemətri",
+    "ukphone": "tə'lemətri",
+    "example": "Telemetry sends pack data to the cloud."
+  },
+  {
+    "name": "communication",
+    "trans": [
+      "通信；沟通"
+    ],
+    "usphone": "kəˌmjuːnɪ'keɪʃn",
+    "ukphone": "kəˌmjuːnɪ'keɪʃn",
+    "example": "Communication is lost when the cable is disconnected."
+  },
+  {
+    "name": "protocol",
+    "trans": [
+      "协议；规程"
+    ],
+    "usphone": "'proʊtəkɔl",
+    "ukphone": "'prəʊtəkɒl",
+    "example": "The device uses a standard communication protocol."
+  },
+  {
+    "name": "message",
+    "trans": [
+      "消息；报文"
+    ],
+    "usphone": "'mesɪdʒ",
+    "ukphone": "'mesɪdʒ",
+    "example": "The controller broadcasts a status message."
+  },
+  {
+    "name": "network",
+    "trans": [
+      "网络"
+    ],
+    "usphone": "'netwɜrk",
+    "ukphone": "'netwɜːk",
+    "example": "All modules are connected to the same network."
+  },
+  {
+    "name": "controller",
+    "trans": [
+      "控制器"
+    ],
+    "usphone": "kən'troʊlər",
+    "ukphone": "kən'trəʊlə",
+    "example": "The controller manages the safety functions."
+  },
+  {
+    "name": "gateway",
+    "trans": [
+      "网关"
+    ],
+    "usphone": "'ɡeɪtweɪ",
+    "ukphone": "'ɡeɪtweɪ",
+    "example": "The gateway forwards battery data to the server."
+  },
+  {
+    "name": "software",
+    "trans": [
+      "软件"
+    ],
+    "usphone": "'sɔftwer",
+    "ukphone": "'sɒftweə",
+    "example": "The software records all active faults."
+  },
+  {
+    "name": "hardware",
+    "trans": [
+      "硬件"
+    ],
+    "usphone": "'hɑrdwer",
+    "ukphone": "'hɑːdweə",
+    "example": "The hardware design includes redundant protection."
+  },
+  {
+    "name": "interface",
+    "trans": [
+      "接口；界面"
+    ],
+    "usphone": "'ɪntərfeɪs",
+    "ukphone": "'ɪntəfeɪs",
+    "example": "Use the diagnostic interface for service work."
+  },
+  {
+    "name": "validation",
+    "trans": [
+      "验证"
+    ],
+    "usphone": "ˌvælɪ'deɪʃn",
+    "ukphone": "ˌvælɪ'deɪʃn",
+    "example": "Validation confirms that the system meets its requirements."
+  },
+  {
+    "name": "verification",
+    "trans": [
+      "核验；验证"
+    ],
+    "usphone": "ˌverɪfɪ'keɪʃn",
+    "ukphone": "ˌverɪfɪ'keɪʃn",
+    "example": "Verification checks that the implementation is correct."
+  },
+  {
+    "name": "requirement",
+    "trans": [
+      "需求；要求"
+    ],
+    "usphone": "rɪ'kwaɪərmənt",
+    "ukphone": "rɪ'kwaɪəmənt",
+    "example": "Every safety requirement must be traceable."
+  },
+  {
+    "name": "specification",
+    "trans": [
+      "规格；技术规范"
+    ],
+    "usphone": "ˌspesɪfɪ'keɪʃn",
+    "ukphone": "ˌspesɪfɪ'keɪʃn",
+    "example": "The specification defines the operating voltage range."
+  },
+  {
+    "name": "compliance",
+    "trans": [
+      "符合性；合规"
+    ],
+    "usphone": "kəm'plaɪəns",
+    "ukphone": "kəm'plaɪəns",
+    "example": "The design must demonstrate compliance with the standard."
+  },
+  {
+    "name": "standard",
+    "trans": [
+      "标准"
+    ],
+    "usphone": "'stændərd",
+    "ukphone": "'stændəd",
+    "example": "Use the relevant safety standard during development."
+  },
+  {
+    "name": "certification",
+    "trans": [
+      "认证"
+    ],
+    "usphone": "ˌsɜrtɪfɪ'keɪʃn",
+    "ukphone": "ˌsɜːtɪfɪ'keɪʃn",
+    "example": "Certification requires a complete test report."
+  },
+  {
+    "name": "incident",
+    "trans": [
+      "事故；事件"
+    ],
+    "usphone": "'ɪnsɪdənt",
+    "ukphone": "'ɪnsɪdənt",
+    "example": "Report any safety incident immediately."
+  },
+  {
+    "name": "emergency",
+    "trans": [
+      "紧急情况"
+    ],
+    "usphone": "ɪ'mɜrdʒənsi",
+    "ukphone": "ɪ'mɜːdʒənsi",
+    "example": "Follow the emergency procedure during thermal events."
+  },
+  {
+    "name": "evacuation",
+    "trans": [
+      "疏散"
+    ],
+    "usphone": "ɪˌvækju'eɪʃn",
+    "ukphone": "ɪˌvækju'eɪʃn",
+    "example": "The evacuation route must remain clear."
+  },
+  {
+    "name": "thermal",
+    "trans": [
+      "热的；热管理相关"
+    ],
+    "usphone": "'θɜrml",
+    "ukphone": "'θɜːml",
+    "example": "The thermal design keeps cells within their temperature range."
+  },
+  {
+    "name": "cooling",
+    "trans": [
+      "冷却"
+    ],
+    "usphone": "'kuːlɪŋ",
+    "ukphone": "'kuːlɪŋ",
+    "example": "Cooling removes heat during fast charging."
+  },
+  {
+    "name": "heating",
+    "trans": [
+      "加热"
+    ],
+    "usphone": "'hiːtɪŋ",
+    "ukphone": "'hiːtɪŋ",
+    "example": "Heating improves charging performance in cold conditions."
+  },
+  {
+    "name": "ventilation",
+    "trans": [
+      "通风"
+    ],
+    "usphone": "ˌventɪ'leɪʃn",
+    "ukphone": "ˌventɪ'leɪʃn",
+    "example": "Ensure adequate ventilation in the battery room."
+  },
+  {
+    "name": "pressure",
+    "trans": [
+      "压力"
+    ],
+    "usphone": "'preʃər",
+    "ukphone": "'preʃə",
+    "example": "Pressure may rise if the cell is damaged."
+  },
+  {
+    "name": "swelling",
+    "trans": [
+      "膨胀；鼓包"
+    ],
+    "usphone": "'swelɪŋ",
+    "ukphone": "'swelɪŋ",
+    "example": "Remove any cell showing visible swelling."
+  },
+  {
+    "name": "inspection",
+    "trans": [
+      "检查；检验"
+    ],
+    "usphone": "ɪn'spekʃn",
+    "ukphone": "ɪn'spekʃn",
+    "example": "Perform a visual inspection before installation."
+  },
+  {
+    "name": "storage",
+    "trans": [
+      "存储；储存"
+    ],
+    "usphone": "'stɔrɪdʒ",
+    "ukphone": "'stɔːrɪdʒ",
+    "example": "Store the battery in a cool and dry location."
+  },
+  {
+    "name": "shipment",
+    "trans": [
+      "运输；装运"
+    ],
+    "usphone": "'ʃɪpmənt",
+    "ukphone": "'ʃɪpmənt",
+    "example": "The shipment requires the correct battery labels."
+  },
+  {
+    "name": "recycling",
+    "trans": [
+      "回收；循环利用"
+    ],
+    "usphone": "ˌriː'saɪklɪŋ",
+    "ukphone": "ˌriː'saɪklɪŋ",
+    "example": "Send end-of-life batteries to an approved recycling facility."
+  },
+  {
+    "name": "warranty",
+    "trans": [
+      "保修；质保"
+    ],
+    "usphone": "'wɔrənti",
+    "ukphone": "'wɒrənti",
+    "example": "The warranty covers defects under normal use."
+  },
+  {
+    "name": "redundancy",
+    "trans": [
+      "冗余；备份"
+    ],
+    "usphone": "rɪ'dʌndənsi",
+    "ukphone": "rɪ'dʌndənsi",
+    "example": "Redundancy keeps the safety function available after a sensor fault."
+  },
+  {
+    "name": "watchdog",
+    "trans": [
+      "看门狗；监控定时器"
+    ],
+    "usphone": "'wɑtʃdɔɡ",
+    "ukphone": "'wɒtʃdɒɡ",
+    "example": "The watchdog resets the controller if software stops responding."
+  },
+  {
+    "name": "commissioning",
+    "trans": [
+      "调试投运；启用"
+    ],
+    "usphone": "kə'mɪʃnɪŋ",
+    "ukphone": "kə'mɪʃnɪŋ",
+    "example": "Commissioning verifies the system before customer delivery."
+  },
+  {
+    "name": "shutdown",
+    "trans": [
+      "关机；停机"
+    ],
+    "usphone": "'ʃʌtdaʊn",
+    "ukphone": "'ʃʌtdaʊn",
+    "example": "The BMS initiates shutdown when a critical fault occurs."
+  },
+  {
+    "name": "lithium-ion cell",
+    "trans": [
+      "锂离子电芯"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lithium iron phosphate",
+    "trans": [
+      "磷酸铁锂；LFP"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nickel manganese cobalt",
+    "trans": [
+      "镍锰钴三元材料；NMC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nickel cobalt aluminum",
+    "trans": [
+      "镍钴铝三元材料；NCA"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "graphite anode",
+    "trans": [
+      "石墨负极"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "silicon anode",
+    "trans": [
+      "硅基负极"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "solid electrolyte interphase",
+    "trans": [
+      "固体电解质界面膜；SEI"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lithium plating",
+    "trans": [
+      "析锂"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dendrite",
+    "trans": [
+      "枝晶"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "intercalation",
+    "trans": [
+      "嵌入；嵌锂"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "diffusion",
+    "trans": [
+      "扩散"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ionic conductivity",
+    "trans": [
+      "离子电导率"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electrode porosity",
+    "trans": [
+      "电极孔隙率"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "active material",
+    "trans": [
+      "活性材料"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electrode loading",
+    "trans": [
+      "电极面密度；载量"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "formation cycle",
+    "trans": [
+      "化成循环"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell chemistry",
+    "trans": [
+      "电芯化学体系"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cylindrical cell",
+    "trans": [
+      "圆柱电芯"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "prismatic cell",
+    "trans": [
+      "方形电芯"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pouch cell",
+    "trans": [
+      "软包电芯"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell can",
+    "trans": [
+      "电芯壳体"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "jelly roll",
+    "trans": [
+      "卷芯"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell tab",
+    "trans": [
+      "极耳"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "series connection",
+    "trans": [
+      "串联"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "parallel connection",
+    "trans": [
+      "并联"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "series-parallel configuration",
+    "trans": [
+      "串并联配置"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell string",
+    "trans": [
+      "电芯串"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "module controller",
+    "trans": [
+      "模组控制器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pack controller",
+    "trans": [
+      "电池包控制器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "service disconnect",
+    "trans": [
+      "维修断电装置"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "high-voltage junction box",
+    "trans": [
+      "高压配电盒；HVJB"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "battery disconnect unit",
+    "trans": [
+      "电池断开单元；BDU"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pack enclosure",
+    "trans": [
+      "电池包箱体"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "compression pad",
+    "trans": [
+      "压紧垫"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nominal voltage",
+    "trans": [
+      "标称电压"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "open-circuit voltage",
+    "trans": [
+      "开路电压；OCV"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "terminal voltage",
+    "trans": [
+      "端电压"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell voltage",
+    "trans": [
+      "单体电压"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pack voltage",
+    "trans": [
+      "电池包电压"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "capacity retention",
+    "trans": [
+      "容量保持率"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ampere-hour",
+    "trans": [
+      "安时；Ah"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "watt-hour",
+    "trans": [
+      "瓦时；Wh"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "C-rate",
+    "trans": [
+      "倍率；C 率"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "internal resistance",
+    "trans": [
+      "内阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "DCIR",
+    "trans": [
+      "直流内阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "AC impedance",
+    "trans": [
+      "交流阻抗"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "coulomb",
+    "trans": [
+      "库仑"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "coulomb counting",
+    "trans": [
+      "库仑计量；安时积分"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "current shunt",
+    "trans": [
+      "电流分流器；采样分流电阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "Hall-effect sensor",
+    "trans": [
+      "霍尔电流传感器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "insulation resistance",
+    "trans": [
+      "绝缘电阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "state of charge",
+    "trans": [
+      "荷电状态；SOC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "state of health",
+    "trans": [
+      "健康状态；SOH"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "state of power",
+    "trans": [
+      "功率状态；SOP"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "remaining useful life",
+    "trans": [
+      "剩余使用寿命；RUL"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "state of energy",
+    "trans": [
+      "能量状态；SOE"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "depth of discharge",
+    "trans": [
+      "放电深度；DOD"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "usable SOC window",
+    "trans": [
+      "可用 SOC 窗口"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "OCV-SOC curve",
+    "trans": [
+      "OCV-SOC 曲线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "OCV hysteresis",
+    "trans": [
+      "开路电压滞回"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lookup table",
+    "trans": [
+      "查找表"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "equivalent circuit model",
+    "trans": [
+      "等效电路模型"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "Kalman filter",
+    "trans": [
+      "卡尔曼滤波器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "observer",
+    "trans": [
+      "状态观测器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "model parameter",
+    "trans": [
+      "模型参数"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "capacity estimation",
+    "trans": [
+      "容量估算"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "resistance estimation",
+    "trans": [
+      "内阻估算"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "SOC drift",
+    "trans": [
+      "SOC 漂移"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell monitoring unit",
+    "trans": [
+      "电芯监测单元；CMU"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "battery management controller",
+    "trans": [
+      "电池管理控制器；BMC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "distributed BMS",
+    "trans": [
+      "分布式 BMS"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "centralized BMS",
+    "trans": [
+      "集中式 BMS"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "daisy chain",
+    "trans": [
+      "菊花链"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "isolated communication",
+    "trans": [
+      "隔离通信"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "passive balancing",
+    "trans": [
+      "被动均衡"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "active balancing",
+    "trans": [
+      "主动均衡"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "balancing resistor",
+    "trans": [
+      "均衡电阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "balancing current",
+    "trans": [
+      "均衡电流"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "balancing threshold",
+    "trans": [
+      "均衡阈值"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "main positive contactor",
+    "trans": [
+      "主正接触器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "main negative contactor",
+    "trans": [
+      "主负接触器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "precharge contactor",
+    "trans": [
+      "预充接触器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "precharge resistor",
+    "trans": [
+      "预充电阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "contactor driver",
+    "trans": [
+      "接触器驱动器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "weld detection",
+    "trans": [
+      "粘连检测"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "constant-current charging",
+    "trans": [
+      "恒流充电；CC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "constant-voltage charging",
+    "trans": [
+      "恒压充电；CV"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "CC-CV charging",
+    "trans": [
+      "恒流恒压充电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charge cutoff voltage",
+    "trans": [
+      "充电截止电压"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charge current limit",
+    "trans": [
+      "充电电流限制"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fast charging",
+    "trans": [
+      "快速充电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "trickle charge",
+    "trans": [
+      "涓流充电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charge acceptance",
+    "trans": [
+      "充电接受能力"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charging curve",
+    "trans": [
+      "充电曲线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charger handshake",
+    "trans": [
+      "充电机握手"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charge port",
+    "trans": [
+      "充电口"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charging interlock",
+    "trans": [
+      "充电互锁"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "regenerative charging",
+    "trans": [
+      "再生充电；能量回收充电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charge derating",
+    "trans": [
+      "充电降额"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal derating",
+    "trans": [
+      "热降额"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell overcharge",
+    "trans": [
+      "单体过充"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charge inhibit",
+    "trans": [
+      "禁止充电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "discharge current limit",
+    "trans": [
+      "放电电流限制"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "continuous discharge",
+    "trans": [
+      "持续放电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pulse discharge",
+    "trans": [
+      "脉冲放电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "peak current",
+    "trans": [
+      "峰值电流"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cranking power",
+    "trans": [
+      "冷启动功率"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "power limit",
+    "trans": [
+      "功率限制"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "load shedding",
+    "trans": [
+      "负载切除"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "discharge cutoff voltage",
+    "trans": [
+      "放电截止电压"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "deep discharge",
+    "trans": [
+      "深度放电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "low-voltage disconnect",
+    "trans": [
+      "低压断开；LVD"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell reversal",
+    "trans": [
+      "电芯反极"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "regenerative braking",
+    "trans": [
+      "再生制动"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bidirectional current",
+    "trans": [
+      "双向电流"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "current derating",
+    "trans": [
+      "电流降额"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "power derating",
+    "trans": [
+      "功率降额"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "inrush current",
+    "trans": [
+      "浪涌电流"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "load profile",
+    "trans": [
+      "负载曲线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal management",
+    "trans": [
+      "热管理"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal runaway",
+    "trans": [
+      "热失控"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal propagation",
+    "trans": [
+      "热蔓延"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "heat generation",
+    "trans": [
+      "产热"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "heat rejection",
+    "trans": [
+      "散热；排热"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "coolant plate",
+    "trans": [
+      "冷却板"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cold plate",
+    "trans": [
+      "冷板"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "liquid cooling",
+    "trans": [
+      "液冷"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "air cooling",
+    "trans": [
+      "风冷"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "refrigerant cooling",
+    "trans": [
+      "冷媒直冷"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal interface material",
+    "trans": [
+      "导热界面材料；TIM"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal pad",
+    "trans": [
+      "导热垫"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "temperature gradient",
+    "trans": [
+      "温度梯度"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hotspot",
+    "trans": [
+      "热点"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal sensor",
+    "trans": [
+      "温度传感器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "heater mat",
+    "trans": [
+      "加热垫"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "venting",
+    "trans": [
+      "泄压排气"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "overcharge protection",
+    "trans": [
+      "过充保护"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "overdischarge protection",
+    "trans": [
+      "过放保护"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "short-circuit protection",
+    "trans": [
+      "短路保护"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "overtemperature protection",
+    "trans": [
+      "过温保护"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "undertemperature protection",
+    "trans": [
+      "低温保护"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "insulation monitoring",
+    "trans": [
+      "绝缘监测"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "isolation fault",
+    "trans": [
+      "绝缘故障"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ground fault",
+    "trans": [
+      "接地故障"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "open-wire detection",
+    "trans": [
+      "断线检测"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sensor plausibility",
+    "trans": [
+      "传感器合理性校验"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "plausibility check",
+    "trans": [
+      "合理性检查"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fault code",
+    "trans": [
+      "故障代码"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "diagnostic trouble code",
+    "trans": [
+      "诊断故障码；DTC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "warning lamp",
+    "trans": [
+      "警告灯"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "limp-home mode",
+    "trans": [
+      "跛行模式；降级运行"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "safe state",
+    "trans": [
+      "安全状态"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fault latch",
+    "trans": [
+      "故障锁存"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell grading",
+    "trans": [
+      "电芯分级"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell matching",
+    "trans": [
+      "电芯配组"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cell binning",
+    "trans": [
+      "电芯分档"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "end-of-line test",
+    "trans": [
+      "产线末端测试；EOL"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "manufacturing execution system",
+    "trans": [
+      "制造执行系统；MES"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "serial number",
+    "trans": [
+      "序列号"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lot number",
+    "trans": [
+      "批次号"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "barcode traceability",
+    "trans": [
+      "条码追溯"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "QR code",
+    "trans": [
+      "二维码"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "genealogy record",
+    "trans": [
+      "谱系记录"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "calibration record",
+    "trans": [
+      "校准记录"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "production test",
+    "trans": [
+      "生产测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "leak test",
+    "trans": [
+      "泄漏测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "torque traceability",
+    "trans": [
+      "扭矩追溯"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "welding quality",
+    "trans": [
+      "焊接质量"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "laser welding",
+    "trans": [
+      "激光焊接"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ultrasonic welding",
+    "trans": [
+      "超声波焊接"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hybrid pulse power characterization",
+    "trans": [
+      "混合脉冲功率特性测试；HPPC"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "electrochemical impedance spectroscopy",
+    "trans": [
+      "电化学阻抗谱；EIS"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pulse power test",
+    "trans": [
+      "脉冲功率测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "capacity test",
+    "trans": [
+      "容量测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cycle-life test",
+    "trans": [
+      "循环寿命测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "calendar-life test",
+    "trans": [
+      "日历寿命测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "drive-cycle test",
+    "trans": [
+      "工况循环测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nail penetration test",
+    "trans": [
+      "针刺测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "crush test",
+    "trans": [
+      "挤压测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal abuse test",
+    "trans": [
+      "热滥用测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "overcharge test",
+    "trans": [
+      "过充测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "external short-circuit test",
+    "trans": [
+      "外部短路测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "vibration test",
+    "trans": [
+      "振动测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mechanical shock test",
+    "trans": [
+      "机械冲击测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "salt spray test",
+    "trans": [
+      "盐雾测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "altitude test",
+    "trans": [
+      "高海拔测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ingress protection test",
+    "trans": [
+      "防护等级测试；IP 测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "CAN bus",
+    "trans": [
+      "控制器局域网；CAN 总线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "CAN FD",
+    "trans": [
+      "带灵活数据速率的 CAN；CAN FD"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "LIN bus",
+    "trans": [
+      "本地互连网络；LIN 总线"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "UDS",
+    "trans": [
+      "统一诊断服务；UDS"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "diagnostic session",
+    "trans": [
+      "诊断会话"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "data logger",
+    "trans": [
+      "数据记录仪"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fault log",
+    "trans": [
+      "故障日志"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "event recorder",
+    "trans": [
+      "事件记录器"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "remote firmware update",
+    "trans": [
+      "远程固件升级"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cybersecurity",
+    "trans": [
+      "网络安全"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "requirements traceability",
+    "trans": [
+      "需求可追溯性"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hardware-in-the-loop",
+    "trans": [
+      "硬件在环；HIL"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "software-in-the-loop",
+    "trans": [
+      "软件在环；SIL"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ISO 26262",
+    "trans": [
+      "ISO 26262 功能安全标准"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "UN 38.3",
+    "trans": [
+      "UN 38.3 锂电池运输测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "IEC 62660",
+    "trans": [
+      "IEC 62660 车用锂电芯标准"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ISO 21434",
+    "trans": [
+      "ISO 21434 道路车辆网络安全标准"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "incremental capacity analysis",
+    "trans": [
+      "增量容量分析"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "differential voltage analysis",
+    "trans": [
+      "微分电压分析"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ohmic resistance",
+    "trans": [
+      "欧姆内阻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pulse power",
+    "trans": [
+      "脉冲功率"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "HPPC",
+    "trans": [
+      "混合脉冲功率特性测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "EIS",
+    "trans": [
+      "电化学阻抗谱"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "calendar life",
+    "trans": [
+      "日历寿命"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "abuse testing",
+    "trans": [
+      "滥用测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nail penetration",
+    "trans": [
+      "针刺测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "external short circuit",
+    "trans": [
+      "外部短路测试"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "overcharge",
+    "trans": [
+      "过充"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "thermal propagation resistance",
+    "trans": [
+      "热蔓延抵抗能力"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "propagation",
+    "trans": [
+      "热蔓延；传播"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "charge transfer resistance",
+    "trans": [
+      "电荷转移阻抗"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "self-discharge",
+    "trans": [
+      "自放电"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "relaxation",
+    "trans": [
+      "静置恢复；弛豫"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  }
+]

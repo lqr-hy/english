@@ -1,0 +1,68 @@
+@use './styles/tokens' as *;
+
+.resources-card {
+  max-width: 1040px;
+}
+
+.resources-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.resource-group {
+  padding: 18px;
+  border: 2px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-clay-sm);
+}
+
+.resource-group h2 {
+  margin: 0;
+  color: var(--color-primary-dark);
+  font-size: 17px;
+}
+
+.resource-group > p {
+  margin: 8px 0 14px;
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.resource-group ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resource-group a {
+  display: grid;
+  gap: 2px;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--color-primary-light);
+}
+
+.resource-group a:hover {
+  background: #dbeafe;
+}
+
+.resource-group strong {
+  color: var(--color-primary-dark);
+  font-size: 14px;
+}
+
+.resource-group span {
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+}

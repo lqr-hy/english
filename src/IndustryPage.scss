@@ -1,0 +1,87 @@
+@use './styles/tokens' as *;
+
+.industry-card {
+  max-width: 960px;
+}
+
+.industry-book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.industry-book-card {
+  display: grid;
+  gap: 10px;
+  min-height: 242px;
+  padding: 22px;
+  border: 2.5px solid var(--color-border);
+  border-radius: 18px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-clay-md);
+}
+
+.industry-book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-clay-lg);
+}
+
+.industry-book-card--pcb {
+  border-color: #7dd3fc;
+  background: linear-gradient(145deg, #fff, #e0f2fe);
+}
+
+.industry-book-card--bms {
+  border-color: #86efac;
+  background: linear-gradient(145deg, #fff, #dcfce7);
+}
+
+.industry-book-label {
+  width: fit-content;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--color-primary-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.industry-book-card h2,
+.industry-book-card p {
+  margin: 0;
+}
+
+.industry-book-card h2 {
+  color: var(--color-primary-dark);
+  font-size: 20px;
+}
+
+.industry-book-card p {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.industry-book-card strong {
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.industry-book-action {
+  margin-top: auto;
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.industry-note {
+  margin: 22px 0 0;
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .industry-book-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -11,6 +11,7 @@ type Category = {
 const categories: Category[] = [
   { id: 'nce', label: '新概念' },
   { id: 'bec', label: '商务英语' },
+  { id: 'industry', label: '行业英语' },
   // { id: 'toefl', label: 'TOEFL' },
   // { id: 'ielts', label: 'IELTS' },
   // { id: 'pet', label: 'PET' },
@@ -59,23 +60,36 @@ function App() {
         </div>
 
         {activeCategory === 'nce' && (
-          <div className="home-content-grid">
-            <Link to="/learn" className="home-content-card">
-              <div className="home-content-card-icon">
-                <BooksIcon />
-              </div>
-              <div className="home-content-card-body">
-                <strong>新概念英语</strong>
-                <span>NCE1–NCE4 音频课程</span>
-                <em className="home-word-count">4 册全集</em>
-              </div>
-            </Link>
-          </div>
+          <>
+            <div className="home-content-grid">
+              <Link to="/learn" className="home-content-card">
+                <div className="home-content-card-icon">
+                  <BooksIcon />
+                </div>
+                <div className="home-content-card-body">
+                  <strong>新概念英语</strong>
+                  <span>NCE1–NCE4 音频课程</span>
+                  <em className="home-word-count">4 册全集</em>
+                </div>
+              </Link>
+              <Link to="/industry" className="home-content-card home-content-card--industry">
+                <div className="home-content-card-icon home-content-card-icon--pcb">
+                  <BooksIcon />
+                </div>
+                <div className="home-content-card-body">
+                  <strong>专业英语：PCB 与 BMS</strong>
+                  <span>设计、制造、测试与交付沟通</span>
+                  <em className="home-word-count">606 个专业术语</em>
+                </div>
+              </Link>
+            </div>
+            <p className="home-entry-hint">也可以从上方“行业英语”分类进入全部行业内容。</p>
+          </>
         )}
 
         {activeCategory === 'bec' && (
           <div className="home-content-grid">
-            {vocabBooks.map((book) => (
+            {vocabBooks.filter((book) => book.domain === 'business').map((book) => (
               <Link key={book.id} to={`/vocab/${book.id}`} className="home-content-card">
                 <div className="home-content-card-icon">
                   <BooksIcon />
@@ -90,7 +104,35 @@ function App() {
           </div>
         )}
 
-        {activeCategory !== 'nce' && activeCategory !== 'bec' && (
+        {activeCategory === 'industry' && (
+          <>
+            <div className="home-section-heading">
+              <div>
+                <h2>从术语到真实工作场景</h2>
+                <p>每个词库均基于开源技术文档或公开对话语料整理，适合技术阅读、客户沟通和口语练习。</p>
+              </div>
+              <Link to="/resources" className="btn-light">查看资源索引</Link>
+            </div>
+            <div className="home-content-grid">
+              {vocabBooks
+                .filter((book) => ['pcb', 'bms', 'reception'].includes(book.id))
+                .map((book) => (
+                  <Link key={book.id} to={`/vocab/${book.id}`} className="home-content-card">
+                    <div className={`home-content-card-icon home-content-card-icon--${book.domain}`}>
+                      <BooksIcon />
+                    </div>
+                    <div className="home-content-card-body">
+                      <strong>{book.name}</strong>
+                      <span>{book.description}</span>
+                      <em className="home-word-count">{book.totalWords} 个精选核心词</em>
+                    </div>
+                  </Link>
+                ))}
+            </div>
+          </>
+        )}
+
+        {activeCategory !== 'nce' && activeCategory !== 'bec' && activeCategory !== 'industry' && (
           <p className="muted home-coming-soon">该分类内容即将推出。</p>
         )}
       </section>

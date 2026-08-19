@@ -15,6 +15,7 @@ function CardMode({ word, playAudio, favoriteMap, onToggleFavorite }: VocabModeP
       </div>
       <div className="vocab-word-trans">
         {word.trans.map((t, i) => <p key={i}>{t}</p>)}
+        {word.example && <p className="vocab-word-example">{word.example}</p>}
       </div>
     </div>
   )

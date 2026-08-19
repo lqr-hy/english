@@ -23,6 +23,7 @@ function EnZhMode({ word, playAudio, favoriteMap, onToggleFavorite, showTranslat
       {showTranslation ? (
         <div className="vocab-word-trans">
           {word.trans.map((t, i) => <p key={i}>{t}</p>)}
+          {word.example && <p className="vocab-word-example">{word.example}</p>}
         </div>
       ) : (
         <button
